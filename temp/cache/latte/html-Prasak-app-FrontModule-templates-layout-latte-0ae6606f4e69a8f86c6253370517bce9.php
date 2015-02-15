@@ -2,20 +2,20 @@
 // source: /var/www/html/Prasak/app/FrontModule/templates/@layout.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('1961815135', 'html')
+list($_b, $_g, $_l) = $template->initialize('6862093061', 'html')
 ;
 // prolog Latte\Macros\BlockMacros
 //
 // block head
 //
-if (!function_exists($_b->blocks['head'][] = '_lbcc61ce0e67_head')) { function _lbcc61ce0e67_head($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
+if (!function_exists($_b->blocks['head'][] = '_lb8220fe7f00_head')) { function _lb8220fe7f00_head($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
 ;
 }}
 
 //
 // block scripts
 //
-if (!function_exists($_b->blocks['scripts'][] = '_lb14e527d176_scripts')) { function _lb14e527d176_scripts($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
+if (!function_exists($_b->blocks['scripts'][] = '_lba3045df538_scripts')) { function _lba3045df538_scripts($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
 ?>	
 	<!-- jQuery -->
         <script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/jquery.js"></script>
@@ -65,7 +65,7 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <meta name="KytaVeprova@gmail.com" content="">
+        <meta name="volny.st@volny.cz" content="">
 
 	<title><?php if (isset($_b->blocks["title"])) { ob_start(); Latte\Macros\BlockMacros::callBlock($_b, 'title', $template->getParameters()); echo $template->striptags(ob_get_clean()) ?>
  | <?php } ?>Báňský prasák</title>
@@ -89,20 +89,17 @@ call_user_func(reset($_b->blocks['head']), $_b, get_defined_vars())  ?>
 
 <?php $_l->tmp = $_control->getComponent("navigation"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
 	
-	<div class="container">
+	
 	    
 <?php $_l->tmp = $_control->getComponent("ocoJde"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
-
+            
 <?php $_l->tmp = $_control->getComponent("organizatori"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
 
 <?php $_l->tmp = $_control->getComponent("registration"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
-
-	    
-            
-        </div>
-        <div class="container-fluid">
+        
 <?php $_l->tmp = $_control->getComponent("footer"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
-        </div>   
+            
+          
 <?php call_user_func(reset($_b->blocks['scripts']), $_b, get_defined_vars())  ?>
 </body>
 </html>
