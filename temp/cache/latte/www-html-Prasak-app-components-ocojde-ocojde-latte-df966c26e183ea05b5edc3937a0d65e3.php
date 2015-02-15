@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/ocojde/ocojde.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('3920664693', 'html')
+list($_b, $_g, $_l) = $template->initialize('8132099037', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
@@ -29,6 +29,5 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
     pivooo pivo piivo pivooo pivooo pivo piivo pivooo pivooo pivo piivo pivooo pivooo pivo piivo pivooo 
     .....pivooo pivo piivo pivooo pivooo pivo piivo pivooo pivooo pivo piivo pivooo pivooo pivo piivo pivooo pivooo pivo piivo pivooo pivooo pivo piivo pivooo pivooo pivo piivo pivooo pivooo pivo piivo pivooo 
     
-    <iframe src="https://www.google.com/maps/embed?pb=!1m30!1m12!1m3!1d5146.599296902741!2d18.162640708792196!3d49.836826977227766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m15!1i0!3e2!4m4!1s0x0%3A0x3d56bc0f542aa1eb!3m2!1d49.838874!2d18.162972!4m3!3m2!1d49.839012399999994!2d18.1627467!4m3!3m2!1d49.836636899999995!2d18.159568999999998!5e0!3m2!1scs!2scz!4v1424015552214" width="800" height="600" frameborder="0" style="border:0"></iframe>
-    </div>
+        </div>
 </section>

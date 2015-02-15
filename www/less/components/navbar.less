@@ -56,8 +56,9 @@
 }
 @media(min-width:768px) {
     .navbar-default {
-    	background-color: transparent;
+    	background-color: @half-transparent;//transparent;   
         padding: 25px 0;
+        font-size:1.2em;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -74,7 +75,7 @@
     }
     .navbar-default.navbar-shrink {
     	background-color: @gray-darkest;
-        padding: 10px 0;
+        padding: 0px 0;
 		.navbar-brand {
 	        font-size: 1.5em;
 	    }    

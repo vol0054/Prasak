@@ -3,21 +3,21 @@
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
-  color: #3e9731;
+  color: #ffaa00;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-  color: #2e7025;
+  color: #cc8800;
 }
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-default .navbar-toggle {
-  background-color: #3e9731;
-  border-color: #3e9731;
+  background-color: #ffaa00;
+  border-color: #ffaa00;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
@@ -30,27 +30,28 @@
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   letter-spacing: 1px;
-  color: #3e9731;
+  color: #ffaa00;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-  color: #3e9731;
+  color: #ffaa00;
   outline: none;
 }
 .navbar-default .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #3e9731;
+  background-color: #ffaa00;
 }
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #2e7025;
+  background-color: #cc8800;
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.65);
     padding: 25px 0;
+    font-size: 1.2em;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -67,7 +68,7 @@
   }
   .navbar-default.navbar-shrink {
     background-color: #222222;
-    padding: 10px 0;
+    padding: 0px 0;
   }
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
@@ -81,7 +82,7 @@ body {
   color: #777777;
 }
 .text-primary {
-  color: #3e9731;
+  color: #ffaa00;
 }
 p.large {
   font-size: 16px;
@@ -94,7 +95,7 @@ a.active {
   outline: none;
 }
 a {
-  color: #3e9731;
+  color: #ffaa00;
 }
 a:hover,
 a:focus,
@@ -121,13 +122,17 @@ h6 {
 .bg-darkest-gray {
   background-color: #222222;
 }
+/**button na uvodni strance */
 .btn-primary {
   color: #ffffff;
-  background-color: #3e9731;
-  border-color: #3e9731;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-color: rgba(0, 0, 0, 0.65);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -135,8 +140,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #2e7025;
-  border-color: #2b6922;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-color: rgba(0, 0, 0, 0.65);
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -158,17 +163,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #3e9731;
-  border-color: #3e9731;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-color: rgba(0, 0, 0, 0.65);
 }
 .btn-primary .badge {
-  color: #3e9731;
+  color: rgba(0, 0, 0, 0.65);
   background-color: #ffffff;
 }
 .btn-xl {
   color: #ffffff;
-  background-color: #3e9731;
-  border-color: #3e9731;
+  background-color: #ffaa00;
+  border-color: #ffaa00;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -182,8 +187,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: #ffffff;
-  background-color: #2e7025;
-  border-color: #2b6922;
+  background-color: #cc8800;
+  border-color: #c28100;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -205,11 +210,11 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #3e9731;
-  border-color: #3e9731;
+  background-color: #ffaa00;
+  border-color: #ffaa00;
 }
 .btn-xl .badge {
-  color: #3e9731;
+  color: #ffaa00;
   background-color: #ffffff;
 }
 header {
@@ -442,7 +447,7 @@ footer {
   padding: 25px 0;
   text-align: center;
   background: #000;
-  color: #3e9731;
+  color: #ffaa00;
 }
 footer span.copyright {
   line-height: 40px;
@@ -477,7 +482,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #3e9731;
+  background-color: #ffaa00;
 }
 .btn:focus,
 .btn:active,
@@ -552,11 +557,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #3e9731;
+  background: #ffaa00;
 }
 ::selection {
   text-shadow: none;
-  background: #3e9731;
+  background: #ffaa00;
 }
 img::selection {
   background: transparent;
@@ -565,6 +570,6 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #3e9731;
+  webkit-tap-highlight-color: #ffaa00;
 }
 /*# sourceMappingURL=index.css.map */
