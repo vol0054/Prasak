@@ -348,52 +348,6 @@
         ]
     },
     {
-        "name": "olicek/google-map-api",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Olicek/GoogleMapAPI.git",
-            "reference": "e4c8b9a365d886aa8cb8b54a1f192a0d52bced27"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Olicek/GoogleMapAPI/zipball/e4c8b9a365d886aa8cb8b54a1f192a0d52bced27",
-            "reference": "e4c8b9a365d886aa8cb8b54a1f192a0d52bced27",
-            "shasum": ""
-        },
-        "require": {
-            "nette/nette": ">=2.1",
-            "php": ">=5.3.0"
-        },
-        "time": "2014-11-12 17:17:35",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-3.0"
-        ],
-        "authors": [
-            {
-                "name": "Petr Olišar",
-                "email": "petr.olisar@gmail.com",
-                "homepage": "http://olisar.eu"
-            }
-        ],
-        "description": "Tool for paste google map to the page with markers",
-        "homepage": "https://github.com/Olicek/GoogleMapAPI",
-        "keywords": [
-            "google",
-            "maps",
-            "nette"
-        ]
-    },
-    {
         "name": "tracy/tracy",
         "version": "v2.2.6",
         "version_normalized": "2.2.6.0",
@@ -1329,61 +1283,49 @@
         "description": "Customization for the best database management tool written in PHP, Adminer"
     },
     {
-        "name": "nette/tester",
-        "version": "v1.3.2",
-        "version_normalized": "1.3.2.0",
+        "name": "olicek/google-map-api",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/nette/tester.git",
-            "reference": "2ce1cd9a6d7012ba059efa08613d5cd6e50c6560"
+            "url": "https://github.com/Olicek/GoogleMapAPI.git",
+            "reference": "be60eca195ff6f8787563da180848a86f4f567c5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nette/tester/zipball/2ce1cd9a6d7012ba059efa08613d5cd6e50c6560",
-            "reference": "2ce1cd9a6d7012ba059efa08613d5cd6e50c6560",
+            "url": "https://api.github.com/repos/Olicek/GoogleMapAPI/zipball/be60eca195ff6f8787563da180848a86f4f567c5",
+            "reference": "be60eca195ff6f8787563da180848a86f4f567c5",
             "shasum": ""
         },
         "require": {
+            "nette/nette": ">=2.1",
             "php": ">=5.3.0"
         },
-        "time": "2015-02-08 04:13:28",
-        "bin": [
-            "Tester/tester"
-        ],
+        "time": "2015-02-19 21:46:11",
         "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.3-dev"
-            }
-        },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "classmap": [
-                "Tester/"
+                "src/"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "BSD-3-Clause",
-            "GPL-2.0",
             "GPL-3.0"
         ],
         "authors": [
             {
-                "name": "David Grudl",
-                "homepage": "http://davidgrudl.com"
-            },
-            {
-                "name": "Nette Community",
-                "homepage": "http://nette.org/contributors"
+                "name": "Petr Olišar",
+                "email": "petr.olisar@gmail.com",
+                "homepage": "http://olisar.eu"
             }
         ],
-        "description": "An easy-to-use PHP unit testing framework.",
-        "homepage": "http://nette.org",
+        "description": "Tool for paste google map to the page with markers",
+        "homepage": "https://github.com/Olicek/GoogleMapAPI",
         "keywords": [
-            "nette",
-            "testing",
-            "unit"
+            "google",
+            "maps",
+            "nette"
         ]
     }
 ]

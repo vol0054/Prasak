@@ -1193,12 +1193,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Olicek/GoogleMapAPI.git",
-                "reference": "e4c8b9a365d886aa8cb8b54a1f192a0d52bced27"
+                "reference": "be60eca195ff6f8787563da180848a86f4f567c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Olicek/GoogleMapAPI/zipball/e4c8b9a365d886aa8cb8b54a1f192a0d52bced27",
-                "reference": "e4c8b9a365d886aa8cb8b54a1f192a0d52bced27",
+                "url": "https://api.github.com/repos/Olicek/GoogleMapAPI/zipball/be60eca195ff6f8787563da180848a86f4f567c5",
+                "reference": "be60eca195ff6f8787563da180848a86f4f567c5",
                 "shasum": ""
             },
             "require": {
@@ -1229,7 +1229,7 @@
                 "maps",
                 "nette"
             ],
-            "time": "2014-11-12 17:17:35"
+            "time": "2015-02-19 21:46:11"
         },
         {
             "name": "tracy/tracy",
@@ -1286,64 +1286,7 @@
             "time": "2014-12-30 01:16:35"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "nette/tester",
-            "version": "v1.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/tester.git",
-                "reference": "2ce1cd9a6d7012ba059efa08613d5cd6e50c6560"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/tester/zipball/2ce1cd9a6d7012ba059efa08613d5cd6e50c6560",
-                "reference": "2ce1cd9a6d7012ba059efa08613d5cd6e50c6560",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "bin": [
-                "Tester/tester"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "Tester/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "http://nette.org/contributors"
-                }
-            ],
-            "description": "An easy-to-use PHP unit testing framework.",
-            "homepage": "http://nette.org",
-            "keywords": [
-                "nette",
-                "testing",
-                "unit"
-            ],
-            "time": "2015-02-08 04:13:28"
-        }
-    ],
+    "packages-dev": null,
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {

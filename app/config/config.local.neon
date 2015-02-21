@@ -2,7 +2,7 @@ parameters:
 
 
 database:
-	dsn: 'mysql:host=localhost;dbname='
+	dsn: 'mysql:host=localhost;dbname=Prasak'
 	user: root
 	password:
 	options:

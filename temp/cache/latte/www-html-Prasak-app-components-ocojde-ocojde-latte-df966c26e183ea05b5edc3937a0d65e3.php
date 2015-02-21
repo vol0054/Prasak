@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/ocojde/ocojde.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('8132099037', 'html')
+list($_b, $_g, $_l) = $template->initialize('7740278468', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 

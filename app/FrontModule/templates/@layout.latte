@@ -12,10 +12,7 @@
         <meta name="description" content="">
         <meta name="volny.st@volny.cz" content="">
 
-	<title>{ifset #title}{include title|striptags} | {/ifset}Báňský prasák</title>
-
-	
-       <script src="{$basePath}/js/jquery.js" type="text/javascript"></script>
+	<title>{ifset #title}{include title|striptags} | {/ifset}Báňský prasák</title>	
         
         <link  rel="stylesheet" media="screen" href="{$basePath}/css/bootstrap.css">
         <link  rel="stylesheet" media="screen" href="{$basePath}/css/bootstrap-theme.css">
@@ -23,23 +20,25 @@
         
 	<link rel="shortcut icon" href="{$basePath}/favicona.ico">
         
-	{block head}{/block}
+	
 </head>
 
 <body id="page-top" class="index">
 	<script> document.documentElement.className+=' js' </script>
 
 	{control navigation}
+	<div n:foreach="$flashes as $flash" class="flash navbar-fixed-bottom {$flash->type}">{$flash->message}</div>
+	{control header}  
 	
-	
-	    
-	    {control ocoJde}
+	{control ocoJde}
             
-	    {control organizatori}
-
-	    {control registration}
-        
-            {control footer}
+	{control organizatori}
+	    
+	{control registration}
+	    
+	
+	
+        {control footer}
             
           
 	{block scripts}
@@ -57,8 +56,6 @@
 
         <!-- Contact Form JavaScript -->
         <script src="{$basePath}/js/jqBootstrapValidation.js"></script>
-        <script src="{$basePath}/js/contact_me.js"></script>
-
         <!-- Custom Theme JavaScript -->
         <script src="{$basePath}/js/agency.js"></script>
 	{/block}

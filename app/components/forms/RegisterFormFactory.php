@@ -3,23 +3,25 @@
 
 namespace App\components\forms;
 use Nette\Application\UI\Form;
-
+use Nette;
 class RegisterFormFactory {
     
+    /**
+     * @return Form
+     */
     public function create(){
         
         $form = new Form;
-        $form->addText('name')
-                ->setRequired('vyplnte prosim vase jmeno');
-        $form->addText('email')
+        $form->addText('nazev','nazev tymu: ')
+                ->setRequired('vyplnte prosim jmeno vaseho tymu');
+        $form->addText('email','kontaktni email: ')
                 ->setRequired('');
-        $form->addCheckbox('terms')
-                ->setRequired();
+        /*$form->addCheckbox('terms')
+                ->setRequired();*/
         
-        $form->addButton('send','Registrovat');
-        
-        return $form;
-    
-            
+        $form->addSubmit('submit','Registrovat');
+	
+        return $form;     
     }
+    
 }

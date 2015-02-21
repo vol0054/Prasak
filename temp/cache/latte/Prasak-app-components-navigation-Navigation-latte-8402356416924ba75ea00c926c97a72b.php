@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/navigation/Navigation.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('3666650939', 'html')
+list($_b, $_g, $_l) = $template->initialize('8091263581', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
@@ -51,20 +51,13 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
                         <a class="page-scroll" href="#partneri">Partneři</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#registrace">Registrace</a>
+                        <a class="page-scroll" href='#registrace'>Registrace</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+	    
         </div>
         <!-- /.container-fluid -->
+	
     </nav>
-<header>
-	    <div class="container">
-		<div class="intro-text">
-		    <div class="intro-lead-in">První ročník pivního maratonu!</div>
-		    <div class="intro-heading">Báňský Prasák</div>
-		    <a href="#ocojde" class="page-scroll btn btn-primary">Chci se ožrat!</a>
-		</div>
-	    </div>
-</header>

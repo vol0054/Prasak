@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/footer/footer.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('5678452161', 'html')
+list($_b, $_g, $_l) = $template->initialize('1808330074', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
