@@ -13,11 +13,13 @@ class RegistrationModel extends BaseModel{
     const 
 	TableName = 'tym';
     
+    /** @var  projde databazi a hleda zadany nazev tymu ve formulari **/ 
     public function findName($values){	
 	
 	return $this->database->table('tym')->select('nazev')->where('nazev',$values->nazev)->fetch();
     }
     
+    /** @var **/
     public function register($values){
 	       
         $this->database->table('tym')->insert($values);        

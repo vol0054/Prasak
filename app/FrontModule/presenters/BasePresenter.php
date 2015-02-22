@@ -15,10 +15,6 @@ class BasePresenter extends \App\Presenters\BasePresenter{
 	parent::__construct();
 	$this->database = $db;
     }
-    
-    public function renderDefault(){
-	
-    }
 
     public function createComponentNavigation(){
 	return new components\navigation\Navigation();	

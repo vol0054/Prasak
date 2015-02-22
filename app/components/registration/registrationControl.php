@@ -18,7 +18,7 @@ class registrationControl extends BaseControl{
     
     public function createComponentRegisterForm() {
         
-        $form = (new RegisterFormFactory())->create();
+        $form = (new RegisterFormFactory)->create();
 	
 	$form->onSuccess[] = $this->registerFormSucceeded;
 	
@@ -29,7 +29,7 @@ class registrationControl extends BaseControl{
     public function registerFormSucceeded($form){
 	
 	$values = $form->getValues();
-	
+
 	$registeredTeam = $this->presenter->RegistrationModel->findName($values);
 	
 	if($registeredTeam == null){

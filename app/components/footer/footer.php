@@ -7,6 +7,8 @@ class footer extends components\BaseControl{
     public function render()
     {
 	$this->template->setFile(__DIR__.'/footer.latte');
+	$this->template->year = date('Y',time());
 	$this->template->render();
+	
     }
 }

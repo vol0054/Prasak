@@ -15,7 +15,7 @@ class RegisterFormFactory {
         $form->addText('nazev','nazev tymu: ')
                 ->setRequired('vyplnte prosim jmeno vaseho tymu');
         $form->addText('email','kontaktni email: ')
-                ->setRequired('');
+                ->setRequired('neplatny email');
         /*$form->addCheckbox('terms')
                 ->setRequired();*/
         
