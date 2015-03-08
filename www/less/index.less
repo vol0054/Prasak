@@ -1,7 +1,8 @@
 @import "variables/variables.less";
 @import "variables/mixins.less";
-@import 'components/navbar.less';
 
+@import 'components/navbar.less';
+@import "components/partneri.less";
 
 body {
 	overflow-x: hidden;
@@ -40,12 +41,13 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-	color: darken(#fff, 10%);
+	color: darken(@brand-primary, 10%);
 }
 
 h1, h2, h3, h4, h5, h6 {
 	.heading-font;
 	font-weight: 700;
+	margin-bottom: 30px;
 }
 
 .img-centered {
@@ -136,7 +138,7 @@ header {
 section {
     padding: 50px 0;
     h2.section-heading {
-		font-size: 16px!important;
+		font-size: 28px!important;
 		margin-top: 0;
 		margin-bottom: 15px;
     }
@@ -152,7 +154,10 @@ section {
 
 @media(min-width:768px) {
 	section {
-		padding: 150px 0;
+		padding: 100px 0;
+	}
+	#partneri{
+	    //background: @gray-lighter;
 	}
 }
 

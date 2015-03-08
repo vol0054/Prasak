@@ -1,6 +1,6 @@
-<section id="registrace" class="bg-light-gray">
+<section  id="registrace" class="bg-light-gray">
     <h2 class="text-center">Registrace !</h2>
-    <div class="container-fluid">
+    <div n:snippet="registration" class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 {form registerForm class=>'sentMessage', id=>'contactForm'}
@@ -21,8 +21,15 @@
                             </div>
                             <div class="clearfix"></div>*}
                             <div class="col-lg-12 text-center">
-                                
-                                {input submit type=>'submit', class=>"btn btn-xl"}
+				<div class="form-group">
+				    <a href="" data-toggle="modal" data-target="#myModal">
+				     nezapomeň si přečíst Chlastací pravidla
+				    </a>
+                                </div>
+				{input submit type=>'submit', class=>"btn btn-xl"}
+				
+				<!-- Button trigger modal -->
+			    
                             </div>
                         </div>
                     </div>
@@ -31,5 +38,24 @@
             </div>
         </div>
     </div>
-    
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Přečti to ty svině</h4>
+      </div>
+      <div class="modal-body">
+        Pivo je nej!, b(l)ýt není ostuda, na dluh jen pro kamoše, bez placení jen u sviňí!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">ne radši ne, jsem sráč</button>
+        <button type="button" class="btn btn-xl" data-dismiss="modal">zmizni kurva</button>
+      </div>
+    </div>
+  </div>
+</div>
 </section>

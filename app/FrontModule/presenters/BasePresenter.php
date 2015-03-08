@@ -29,6 +29,11 @@ class BasePresenter extends \App\Presenters\BasePresenter{
     public function createComponentFooter(){
 	return new components\footer\footer();
     }
+    
+    public function createComponentPartneri(){
+	return new components\partneri\PartneriControl();
+    }
+
     public function createComponentOrganizatori() {
 	return new components\organizatori\organizatorControl();
     }

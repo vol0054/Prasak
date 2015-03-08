@@ -74,12 +74,77 @@
     font-size: 1.5em;
   }
 }
+#partneri .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#partneri .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#partneri .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(255, 170, 0, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#partneri .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+#partneri .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#partneri .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+#partneri .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#partneri .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+#partneri .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+#partneri .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#partneri .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#partneri * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-  color: #777777;
+  color: #bbbbbb;
 }
 .text-primary {
   color: #ffaa00;
@@ -105,7 +170,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #e6e6e6;
+  color: #cc8800;
 }
 h1,
 h2,
@@ -116,6 +181,7 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 .img-centered {
   margin: 0 auto;
@@ -277,7 +343,7 @@ section {
   padding: 50px 0;
 }
 section h2.section-heading {
-  font-size: 16px!important;
+  font-size: 28px!important;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -291,7 +357,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 .service-heading {

@@ -36,7 +36,7 @@ class registrationControl extends BaseControl{
 	    $this->presenter->RegistrationModel->register($values);
 	    //$this->presenter->RegistrationModel->sendMail($values);
 	    $this->presenter->flashMessage('jede to dopice!', 'alert alert-success');
-	    $this->redirect('this');
+	    $this->presenter->redrawControl('registration');
 	}else{	   
 	    
 	    $this->presenter->flashMessage('tym '.$values->nazev.' je jiz registrovan. zvolte si jiny nazev','alert alert-danger');

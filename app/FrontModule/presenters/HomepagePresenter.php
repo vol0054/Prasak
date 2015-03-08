@@ -11,6 +11,9 @@ class HomepagePresenter extends BasePresenter
     /** @inject @var \App\Model\RegistrationModel */
     public $RegistrationModel;
     
+    /** @inject @var \App\Model\HospodaModel */
+    public $HospodaModel;
+    
     public function renderDefault() {
 	
     }

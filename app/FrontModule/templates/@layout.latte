@@ -29,17 +29,22 @@
 	
 	{control navigation}
 	
-	<div n:foreach="$flashes as $flash" class="flash navbar-fixed-bottom {$flash->type}">{$flash->message}</div>
+	<div n:foreach="$flashes as $flash" class="flash navbar-fixed-bottom {$flash->type}">
+	    {$flash->message} 
+	    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	    </button>
+	</div>
 	
 	{control header}  
 	
 	{control ocoJde}
-            
+         
+	{control partneri}
+	
 	{control organizatori}
 	
-	{snippet registration}
-	    {control registration}
-	{/snippet}
+	{control registration}
 	    
         {control footer}
             

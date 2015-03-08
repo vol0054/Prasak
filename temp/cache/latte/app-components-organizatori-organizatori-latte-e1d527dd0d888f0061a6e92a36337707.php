@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/organizatori/organizatori.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('5808254131', 'html')
+list($_b, $_g, $_l) = $template->initialize('7641298229', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
@@ -16,7 +16,7 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 //
 ?>
 <section id="organizatori">
-    <h2 class="text-center">Organizátoři (nebo seznam hospod)</h2>
+    <h2 class="text-center">Organizátoři</h2>
     <div class="container text-center">
     <div class="row">
         
