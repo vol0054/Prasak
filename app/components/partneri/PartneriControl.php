@@ -4,11 +4,6 @@ use components;
 
 class PartneriControl extends \App\components\BaseControl{
     
-    /** @var nazev hospody */
-    public $nazev;
-    
-    
-    
     public function render(){
 	
 	$this->template->setFile(__DIR__.'/partneri.latte');

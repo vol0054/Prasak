@@ -2,13 +2,13 @@
 // source: /var/www/html/Prasak/app/FrontModule/templates/@layout.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('8701639324', 'html')
+list($_b, $_g, $_l) = $template->initialize('5053422584', 'html')
 ;
 // prolog Latte\Macros\BlockMacros
 //
 // block scripts
 //
-if (!function_exists($_b->blocks['scripts'][] = '_lb1a0b205814_scripts')) { function _lb1a0b205814_scripts($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
+if (!function_exists($_b->blocks['scripts'][] = '_lbb9bd74f2fb_scripts')) { function _lbb9bd74f2fb_scripts($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
 ?>	
 	<!-- jQuery -->
         <script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/jquery.js"></script>
@@ -55,7 +55,8 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 	<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
+	<meta name="keywords" content="pivní maraton"
+        <meta name="description" content="báňský prasák, pivní maraton, Ostrava">
         <meta name="volny.st@volny.cz" content="">
 
 	<title><?php if (isset($_b->blocks["title"])) { ob_start(); Latte\Macros\BlockMacros::callBlock($_b, 'title', $template->getParameters()); echo $template->striptags(ob_get_clean()) ?>
@@ -91,7 +92,7 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
          
 <?php $_l->tmp = $_control->getComponent("partneri"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
 	
-<?php $_l->tmp = $_control->getComponent("organizatori"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
+<?php $_l->tmp = $_control->getComponent("pravidla"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
 	
 <?php $_l->tmp = $_control->getComponent("registration"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
 	    

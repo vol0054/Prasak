@@ -136,7 +136,7 @@ header {
 // Global Section Styles
 
 section {
-    padding: 50px 0;
+    padding: 0.3em!important 0!important;
     h2.section-heading {
 		font-size: 28px!important;
 		margin-top: 0;
@@ -310,4 +310,15 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @brand-primary;
+}
+/* Map */
+
+.map {
+    height: 600px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
 }

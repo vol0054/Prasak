@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/footer/footer.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('3179974740', 'html')
+list($_b, $_g, $_l) = $template->initialize('8038319708', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
@@ -30,7 +30,9 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
                     </ul>
                 </div>
 		<div class="col-md-6">
-                    <span class="copyright">Copyright &copy; <a href='http://volnystanislav.eu'>KytaVeprova</a> 2014-<?php echo Latte\Runtime\Filters::escapeHtml($year, ENT_NOQUOTES) ?></span>
+                    <span class="copyright">Copyright &copy; <a href='http://volnystanislav.eu'>KytaVeprova</a> <?php echo Latte\Runtime\Filters::escapeHtml($year, ENT_NOQUOTES) ?></span>
+		    <br>
+		    <span class="copyright"> with little help from <a href="http://html5up.net">html5.up</span>
                 </div>
                             </div>
         </div>

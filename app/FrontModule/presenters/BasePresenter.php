@@ -40,4 +40,12 @@ class BasePresenter extends \App\Presenters\BasePresenter{
     public function createComponentRegistration(){
 	return new components\registration\registrationControl();
     }
+    
+    public function createComponentMap(){
+	return new components\map\MapControl();
+    }
+    public function createComponentPravidla(){
+	return new components\pravidla\PravidlaControl();
+	
+    }
 }

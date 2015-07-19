@@ -2,13 +2,13 @@
 // source: /var/www/html/Prasak/app/components/registration/registration.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('4959179726', 'html')
+list($_b, $_g, $_l) = $template->initialize('6623986027', 'html')
 ;
 // prolog Latte\Macros\BlockMacros
 //
 // block _registration
 //
-if (!function_exists($_b->blocks['_registration'][] = '_lbc6f1be4e52__registration')) { function _lbc6f1be4e52__registration($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v; $_control->redrawControl('registration', FALSE)
+if (!function_exists($_b->blocks['_registration'][] = '_lbf91fc1211b__registration')) { function _lbf91fc1211b__registration($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v; $_control->redrawControl('registration', FALSE)
 ?>        <div class="row">
             <div class="col-lg-12">
                 <?php Nette\Bridges\FormsLatte\FormMacros::renderFormBegin($form = $_form = $_control["registerForm"], array('class'=>'sentMessage', 'id'=>'contactForm')) ?>
@@ -26,12 +26,15 @@ if (!function_exists($_b->blocks['_registration'][] = '_lbc6f1be4e52__registrati
 
                                 <p class="help-block text-danger"></p>
                             </div>
-                                                        <div class="col-lg-12 text-center">
+                            
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
 				<div class="form-group">
-				    <a href="" data-toggle="modal" data-target="#myModal">
-				     nezapomeň si přečíst Chlastací pravidla
-				    </a>
-                                </div>
+				    <?php echo $_form["terms"]->getControl()->addAttributes(array('type'=>'checkbox', 'class'=>'form-control')) ?> tímto souhlasíš s <a href="" data-toggle="modal" data-target="#myModal">chlastacími pravidly</a> 
+				    <p class="help-block text-danger"></p>
+				</div>
+				
+				
 				<?php echo $_form["submit"]->getControl()->addAttributes(array('type'=>'submit', 'class'=>"btn btn-xl")) ?>
 
 				

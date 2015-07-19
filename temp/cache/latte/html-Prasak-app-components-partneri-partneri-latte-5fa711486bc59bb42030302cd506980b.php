@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/partneri/partneri.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('6573799748', 'html')
+list($_b, $_g, $_l) = $template->initialize('0469796018', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
@@ -32,17 +32,14 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 				    <i class="fa fa-plus fa-3x"></i>
 				</div>
 			    </div>
-			<img src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>
-/<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($h->thumb), ENT_COMPAT) ?>" class="img-responsive img-centered" alt="">
+			<img src="http://placehold.it/400x400" class="img-responsive img-centered" alt="">
 			</a>
 			<div class="portfolio-caption">
 			    <h4><?php echo Latte\Runtime\Filters::escapeHtml($h->nazev, ENT_NOQUOTES) ?></h4>
-			    <p class="text-muted"><?php echo Latte\Runtime\Filters::escapeHtml($h->popis, ENT_NOQUOTES) ?></p>
+			    <p class="text-muted"></p>
 			</div>
 		</div>
 <?php $iterations++; } ?>
-
-
 	</div>
     </div>
 </section>
@@ -69,9 +66,7 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 			    <p><a href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($modal->www), ENT_COMPAT) ?>
 ">Navštivte webové stránky hodpody <?php echo Latte\Runtime\Filters::escapeHtml($modal->nazev, ENT_NOQUOTES) ?></a></p>
                             <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
+                                <li></li>
                             </ul>
                             <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i> Zavřít</button>
                         </div>

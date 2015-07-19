@@ -34,6 +34,7 @@ class registrationControl extends BaseControl{
 	
 	if($registeredTeam == null){
 	    $this->presenter->RegistrationModel->register($values);
+	    /** automaticky mailing **/
 	    //$this->presenter->RegistrationModel->sendMail($values);
 	    $this->presenter->flashMessage('jede to dopice!', 'alert alert-success');
 	    $this->presenter->redrawControl('registration');
