@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/pravidla/pravidla.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('8469081346', 'html')
+list($_b, $_g, $_l) = $template->initialize('0166951678', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
@@ -17,7 +17,7 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 ?>
 <section id="pravidla">
     <div class="container">
-	<h2>Pravidla</h2>
+	<h2 class="text-center">Pravidla</h2>
 	je potřeba sepsat nejak pravidla soutěže, a jak to vše bude probíhat atp.....
     </div>
 </section>

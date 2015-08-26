@@ -92,7 +92,7 @@ class ContainerBuilder extends Nette\Object
 
 	/**
 	 * Gets all service definitions.
-	 * @return array
+	 * @return ServiceDefinition[]
 	 */
 	public function getDefinitions()
 	{
@@ -501,6 +501,7 @@ class ContainerBuilder extends Nette\Object
 			}
 			$code .= $this->formatStatement($setup) . ";\n";
 		}
+		$this->currentService = NULL;
 
 		$code .= 'return $service;';
 
@@ -519,7 +520,7 @@ class ContainerBuilder extends Nette\Object
 		$factoryClass->addMethod('__construct')
 			->addBody('$this->container = $container;')
 			->addParameter('container')
-				->setTypeHint('Nette\DI\Container');
+				->setTypeHint($this->generatedClasses[0]->name);
 
 		$factoryClass->addMethod($def->implementType)
 			->setParameters($this->convertParameters($def->parameters))

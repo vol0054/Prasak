@@ -19,7 +19,7 @@
 		"nette/nette": "~2.2.0",
 		"dg/adminer-custom": "~1.5",
 		"george-oakling/googlemap": "dev-master",
-		"olicek/google-map-api": "dev-master"
+		"olicek/google-map-api": "* dev-master"
 	},
 	"require-dev": {
 		"nette/tester": "~1.0"

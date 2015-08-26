@@ -139,6 +139,22 @@
     margin: 0 0 30px;
   }
 }
+#top-link-block.affix-top {
+  position: absolute;
+  /* allows it to "slide" up into view */
+  bottom: -82px;
+  /* negative of the offset - height of link element */
+  left: 10px;
+  /* padding from the left side of the window */
+}
+#top-link-block.affix {
+  position: fixed;
+  /* keeps it on the bottom once in view */
+  bottom: 18px;
+  /* height of link element */
+  left: 10px;
+  /* padding from the left side of the window */
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -493,13 +509,28 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #ffaa00;
 }
-/* Map */
-.map {
-  height: 600px;
+#map {
+  height: 400px;
+  width: 100%;
 }
-@media (max-width: 768px) {
-  .map {
-    height: 75%;
-  }
+#map {
+  height: 400px;
+  width: 100%;
+}
+#map img {
+  max-width: none;
+}
+#map .content {
+  padding: 0 0.5em 1em 0.5em;
+}
+#map .firstHeading {
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+#map #bodyContent p {
+  font-size: 1em;
+  margin: 0;
 }
 /*# sourceMappingURL=index.css.map */

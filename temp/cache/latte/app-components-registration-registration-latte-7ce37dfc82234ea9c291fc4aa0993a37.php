@@ -2,13 +2,13 @@
 // source: /var/www/html/Prasak/app/components/registration/registration.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('6623986027', 'html')
+list($_b, $_g, $_l) = $template->initialize('6302705723', 'html')
 ;
 // prolog Latte\Macros\BlockMacros
 //
 // block _registration
 //
-if (!function_exists($_b->blocks['_registration'][] = '_lbf91fc1211b__registration')) { function _lbf91fc1211b__registration($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v; $_control->redrawControl('registration', FALSE)
+if (!function_exists($_b->blocks['_registration'][] = '_lb7d073a11f8__registration')) { function _lb7d073a11f8__registration($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v; $_control->redrawControl('registration', FALSE)
 ?>        <div class="row">
             <div class="col-lg-12">
                 <?php Nette\Bridges\FormsLatte\FormMacros::renderFormBegin($form = $_form = $_control["registerForm"], array('class'=>'sentMessage', 'id'=>'contactForm')) ?>

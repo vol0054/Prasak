@@ -2,13 +2,13 @@
 // source: /var/www/html/Prasak/app/FrontModule/templates/@layout.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('5053422584', 'html')
+list($_b, $_g, $_l) = $template->initialize('8364532911', 'html')
 ;
 // prolog Latte\Macros\BlockMacros
 //
 // block scripts
 //
-if (!function_exists($_b->blocks['scripts'][] = '_lbb9bd74f2fb_scripts')) { function _lbb9bd74f2fb_scripts($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
+if (!function_exists($_b->blocks['scripts'][] = '_lbd958179e8a_scripts')) { function _lbd958179e8a_scripts($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
 ?>	
 	<!-- jQuery -->
         <script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/jquery.js"></script>
@@ -25,6 +25,11 @@ if (!function_exists($_b->blocks['scripts'][] = '_lbb9bd74f2fb_scripts')) { func
         <script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/jqBootstrapValidation.js"></script>
         <!-- Custom Theme JavaScript -->
         <script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/agency.js"></script>
+	
+	<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/analytics/googleAnalytics.js"></script>
+	
+	<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/map/googleMap.js"></script>
+	<script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/map/main.js"></script>   
 <?php
 }}
 
@@ -57,7 +62,7 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="pivní maraton"
         <meta name="description" content="báňský prasák, pivní maraton, Ostrava">
-        <meta name="volny.st@volny.cz" content="">
+        <meta name="volny.st@volny.cz" content="volny.st@volny.cz">
 
 	<title><?php if (isset($_b->blocks["title"])) { ob_start(); Latte\Macros\BlockMacros::callBlock($_b, 'title', $template->getParameters()); echo $template->striptags(ob_get_clean()) ?>
  | <?php } ?>Báňský prasák</title>	
@@ -65,6 +70,7 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
         <link  rel="stylesheet" media="screen" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/css/bootstrap.css">
         <link  rel="stylesheet" media="screen" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/css/bootstrap-theme.css">
         <link rel="stylesheet" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/css/index.css">
+	<link rel="stylesheet" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/css/newstyle.css">
         
 	<link rel="shortcut icon" href="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/favicona.ico">
         
@@ -86,31 +92,22 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 	</div>
 <?php $iterations++; } ?>
 	
-<?php $_l->tmp = $_control->getComponent("header"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
-	
-<?php $_l->tmp = $_control->getComponent("ocoJde"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
-         
-<?php $_l->tmp = $_control->getComponent("partneri"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
-	
-<?php $_l->tmp = $_control->getComponent("pravidla"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
+<?php $_l->tmp = $_control->getComponent("header"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ;$_l->tmp = $_control->getComponent("ocoJde"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ;$_l->tmp = $_control->getComponent("partneri"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ;$_l->tmp = $_control->getComponent("map"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ;$_l->tmp = $_control->getComponent("pravidla"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
 	
 <?php $_l->tmp = $_control->getComponent("registration"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
-	    
+	<span id="top-link-block" class="">
+	    <a href="#top" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+		<i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+	    </a>
+	</span><!-- /top-link-block -->
 <?php $_l->tmp = $_control->getComponent("footer"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ?>
-            
+        
+	
           
 <?php if ($_l->extends) { ob_end_clean(); return $template->renderChildTemplate($_l->extends, get_defined_vars()); }
 call_user_func(reset($_b->blocks['scripts']), $_b, get_defined_vars())  ?>
-	
-	<script>
-  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-60019059-1', 'auto');
-  ga('send', 'pageview');
+	   
 
-</script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/navigation/Navigation.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('7240977270', 'html')
+list($_b, $_g, $_l) = $template->initialize('8681591743', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
@@ -38,16 +38,16 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
                 <ul class="nav navbar-nav navbar-right">
                     <li class="">
                         <a class="page-scroll" href="#ocojde">O co jde</a>
-                    </li>		    
-                    <li class="">
-                        <a class="page-scroll" href="">Trasa</a>
-                    </li>		    
+		    </li>
 		    <li>
                         <a class="page-scroll" href="#partneri">Partneři</a>
                     </li>
+		    <li>
+			<a class="page-scroll" href="#trasa">Trasa</a>
+		    </li>
                     <li class="">
                         <a class="page-scroll" href="#pravidla">Pravidla</a>
-                    </li>
+                    </li>	
 		    <li>
                         <a class="page-scroll" href='#registrace'>Registrace</a>
                     </li>

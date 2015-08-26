@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/map/map.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('0688649471', 'html')
+list($_b, $_g, $_l) = $template->initialize('4286735249', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
@@ -15,8 +15,15 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 // main template
 //
 ?>
-<section id="" class="">
-    <div class="container">
-	tady bude mapa - bud z googlu s tim ze cela stranka muze pomalu nacitat, nebo tady dat jenom nakreslenou mapu jako obrazek.
-    </div>
+<section id="trasa" class="bg-light-gray">
+    <h2 class="text-center">Mapa Závodu</h2>
+    <div id="map"></div>  
 </section>
+
+<script src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
+
+
+
+
+
+

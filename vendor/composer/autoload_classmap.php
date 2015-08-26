@@ -311,6 +311,7 @@ return array(
     'Oli\\GoogleAPI\\IMarkers' => $vendorDir . '/olicek/google-map-api/src/Map/IMarkers.php',
     'Oli\\GoogleAPI\\MapAPI' => $vendorDir . '/olicek/google-map-api/src/Map/MapAPI.php',
     'Oli\\GoogleAPI\\MapApiExtension' => $vendorDir . '/olicek/google-map-api/src/DI/MapApiExtension.php',
+    'Oli\\GoogleAPI\\Marker\\Icon' => $vendorDir . '/olicek/google-map-api/src/Map/Icon.php',
     'Oli\\GoogleAPI\\Markers' => $vendorDir . '/olicek/google-map-api/src/Map/Markers.php',
     'Oli\\GoogleAPI\\TMap' => $vendorDir . '/olicek/google-map-api/src/Map/TMap.php',
     'Tracy\\Bar' => $vendorDir . '/tracy/tracy/src/Tracy/Bar.php',

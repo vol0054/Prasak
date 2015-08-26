@@ -2,13 +2,13 @@
 // source: /var/www/html/Prasak/app/FrontModule/templates/Homepage/default.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('3406596411', 'html')
+list($_b, $_g, $_l) = $template->initialize('4678743581', 'html')
 ;
 // prolog Latte\Macros\BlockMacros
 //
 // block content
 //
-if (!function_exists($_b->blocks['content'][] = '_lbef47ffa7db_content')) { function _lbef47ffa7db_content($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
+if (!function_exists($_b->blocks['content'][] = '_lbd327434daf_content')) { function _lbd327434daf_content($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
 ;
 }}
 

@@ -27,3 +27,6 @@ services:
 	router: @App\RouterFactory::createRouter
 	- App\Model\RegistrationModel
 	- App\Model\HospodaModel
+
+extensions:
+    map: Oli\GoogleAPI\MapApiExtension
