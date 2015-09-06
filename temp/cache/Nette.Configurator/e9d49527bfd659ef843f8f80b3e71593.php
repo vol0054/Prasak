@@ -36,8 +36,9 @@ class SystemContainer extends Nette\DI\Container
 				'database.default',
 				'database.default.context',
 				'25_App_Model_HospodaModel',
-				'26_App_Model_RegistrationModel',
-				'27_App_Model_UserManager',
+				'26_App_Model_OcoJdeModel',
+				'27_App_Model_RegistrationModel',
+				'28_App_Model_UserManager',
 				'container',
 			),
 			'nette\\bridges\\framework\\netteaccessor' => array('nette'),
@@ -70,13 +71,15 @@ class SystemContainer extends Nette\DI\Container
 			'oli\\googleapi\\imarkers' => array('map.markers'),
 			'app\\model\\basemodel' => array(
 				'25_App_Model_HospodaModel',
-				'26_App_Model_RegistrationModel',
+				'26_App_Model_OcoJdeModel',
+				'27_App_Model_RegistrationModel',
 			),
 			'app\\model\\hospodamodel' => array('25_App_Model_HospodaModel'),
-			'app\\model\\registrationmodel' => array('26_App_Model_RegistrationModel'),
-			'nette\\security\\iauthenticator' => array('27_App_Model_UserManager'),
-			'app\\model\\usermanager' => array('27_App_Model_UserManager'),
-			'app\\routerfactory' => array('28_App_RouterFactory'),
+			'app\\model\\ocojdemodel' => array('26_App_Model_OcoJdeModel'),
+			'app\\model\\registrationmodel' => array('27_App_Model_RegistrationModel'),
+			'nette\\security\\iauthenticator' => array('28_App_Model_UserManager'),
+			'app\\model\\usermanager' => array('28_App_Model_UserManager'),
+			'app\\routerfactory' => array('29_App_RouterFactory'),
 			'nette\\di\\container' => array('container'),
 		),
 	);
@@ -112,9 +115,19 @@ class SystemContainer extends Nette\DI\Container
 
 
 	/**
+	 * @return App\Model\OcoJdeModel
+	 */
+	public function createService__26_App_Model_OcoJdeModel()
+	{
+		$service = new App\Model\OcoJdeModel($this->getService('database.default.context'));
+		return $service;
+	}
+
+
+	/**
 	 * @return App\Model\RegistrationModel
 	 */
-	public function createService__26_App_Model_RegistrationModel()
+	public function createService__27_App_Model_RegistrationModel()
 	{
 		$service = new App\Model\RegistrationModel($this->getService('database.default.context'));
 		return $service;
@@ -124,7 +137,7 @@ class SystemContainer extends Nette\DI\Container
 	/**
 	 * @return App\Model\UserManager
 	 */
-	public function createService__27_App_Model_UserManager()
+	public function createService__28_App_Model_UserManager()
 	{
 		$service = new App\Model\UserManager($this->getService('database.default.context'));
 		return $service;
@@ -134,7 +147,7 @@ class SystemContainer extends Nette\DI\Container
 	/**
 	 * @return App\RouterFactory
 	 */
-	public function createService__28_App_RouterFactory()
+	public function createService__29_App_RouterFactory()
 	{
 		$service = new App\RouterFactory;
 		return $service;
@@ -382,7 +395,7 @@ class SystemContainer extends Nette\DI\Container
 	 */
 	public function createServiceRouter()
 	{
-		$service = $this->getService('28_App_RouterFactory')->createRouter();
+		$service = $this->getService('29_App_RouterFactory')->createRouter();
 		if (!$service instanceof Nette\Application\IRouter) {
 			throw new Nette\UnexpectedValueException('Unable to create service \'router\', value returned by factory is not Nette\\Application\\IRouter type.');
 		}
@@ -406,7 +419,7 @@ class SystemContainer extends Nette\DI\Container
 	 */
 	public function createServiceUser()
 	{
-		$service = new Nette\Security\User($this->getService('nette.userStorage'), $this->getService('27_App_Model_UserManager'));
+		$service = new Nette\Security\User($this->getService('nette.userStorage'), $this->getService('28_App_Model_UserManager'));
 		Tracy\Debugger::getBar()->addPanel(new Nette\Bridges\SecurityTracy\UserPanel($service));
 		return $service;
 	}

@@ -1,0 +1,7 @@
+<?php //netteCache[01]000259a:3:{s:4:"time";s:21:"0.51227900 1441544016";s:9:"callbacks";a:1:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:67:"/var/www/html/Prasak/app/AdminModule/presenters/OcoJdePresenter.php";i:2;i:1441544015;}}s:10:"serialized";b:1;}?>a:1:{s:42:"App\AdminModule\presenters\OcoJdePresenter";a:3:{s:5:"class";s:89:"/**
+ * Description of OcoJdePresenter
+ *
+ * @author KytaVeprova <volny@ctyrimedia.cz>
+ */";s:3:"use";a:1:{s:5:"Model";s:9:"App\Model";}s:12:"$OcoJdeModel";s:37:"/**
+	 * @var OcoJdeModel @inject
+	 */";}}

@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/partneri/partneri.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('0317438029', 'html')
+list($_b, $_g, $_l) = $template->initialize('0226151651', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
@@ -32,7 +32,7 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 				    <i class="fa fa-plus fa-3x"></i>
 				</div>
 			    </div>
-			<img src="http://placehold.it/400x400" class="img-responsive img-centered" alt="">
+			<img src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($h->thumb), ENT_COMPAT) ?>" class="img-responsive img-centered" alt="">
 			</a>
 			<div class="portfolio-caption">
 			    <h4><?php echo Latte\Runtime\Filters::escapeHtml($h->nazev, ENT_NOQUOTES) ?></h4>

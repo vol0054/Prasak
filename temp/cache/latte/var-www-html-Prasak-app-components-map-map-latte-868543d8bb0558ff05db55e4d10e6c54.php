@@ -2,7 +2,7 @@
 // source: /var/www/html/Prasak/app/components/map/map.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('4286735249', 'html')
+list($_b, $_g, $_l) = $template->initialize('8202388719', 'html')
 ;
 // prolog Nette\Bridges\ApplicationLatte\UIMacros
 
@@ -21,8 +21,6 @@ if (empty($_l->extends) && !empty($_control->snippetMode)) {
 </section>
 
 <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
-
-
 
 
 

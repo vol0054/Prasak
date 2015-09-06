@@ -2,13 +2,13 @@
 // source: /var/www/html/Prasak/app/FrontModule/templates/@layout.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('8364532911', 'html')
+list($_b, $_g, $_l) = $template->initialize('0537792910', 'html')
 ;
 // prolog Latte\Macros\BlockMacros
 //
 // block scripts
 //
-if (!function_exists($_b->blocks['scripts'][] = '_lbd958179e8a_scripts')) { function _lbd958179e8a_scripts($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
+if (!function_exists($_b->blocks['scripts'][] = '_lbf3ccb7b811_scripts')) { function _lbf3ccb7b811_scripts($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
 ?>	
 	<!-- jQuery -->
         <script src="<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($basePath), ENT_COMPAT) ?>/js/jquery.js"></script>

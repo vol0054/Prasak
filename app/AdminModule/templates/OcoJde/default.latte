@@ -1,0 +1,22 @@
+{block title}Pokec{/block}
+
+{block content}
+<h1> Pokec </h1>
+<a class="btn btn-primary" n:href="edit"><span class="glyphicon glyphicon-edit"></span> Upravit</a>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Text</th>
+			<th>Upraveno</th>
+			<th></th>
+		</tr>		
+	</thead>
+	<tbody>
+		<tr n:foreach="$pokec as $p">
+			<th>{$p->text}</th>
+			<th>{$p->created_at}</th>
+		</tr>
+		
+	</tbody>
+</table>

@@ -35,13 +35,14 @@ function initMap() {
 	});
 
 	flightPath.setMap(map);
-	
+	var beerMarker = 'assets/icons/beer-marker-example.png';
 	for(i=0; i < coordinates.length - 1; i++) {	
 		marker = new google.maps.Marker({
 			position: coordinates[i],
 			map: map,
 			label:labels[i],
-			title: 'hospoda Vzpomínka'
+			title: 'hospoda Vzpomínka',
+			icon: beerMarker				
 		});
 	};
 }

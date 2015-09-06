@@ -2,13 +2,13 @@
 // source: /var/www/html/Prasak/app/components/registration/registration.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('6302705723', 'html')
+list($_b, $_g, $_l) = $template->initialize('9019570661', 'html')
 ;
 // prolog Latte\Macros\BlockMacros
 //
 // block _registration
 //
-if (!function_exists($_b->blocks['_registration'][] = '_lb7d073a11f8__registration')) { function _lb7d073a11f8__registration($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v; $_control->redrawControl('registration', FALSE)
+if (!function_exists($_b->blocks['_registration'][] = '_lbb8ec65dcd6__registration')) { function _lbb8ec65dcd6__registration($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v; $_control->redrawControl('registration', FALSE)
 ?>        <div class="row">
             <div class="col-lg-12">
                 <?php Nette\Bridges\FormsLatte\FormMacros::renderFormBegin($form = $_form = $_control["registerForm"], array('class'=>'sentMessage', 'id'=>'contactForm')) ?>
@@ -17,7 +17,12 @@ if (!function_exists($_b->blocks['_registration'][] = '_lb7d073a11f8__registrati
                         <div class="col-md-4"></div>
                         <div class="col-md-4">
                             <div class="form-group">                  
-                                <?php echo $_form["nazev"]->getControl()->addAttributes(array('type'=>'text', 'class'=>'form-control', 'placeholder'=>'Vaše jméno:')) ?>
+                                <?php echo $_form["nazev"]->getControl()->addAttributes(array('type'=>'text', 'class'=>'form-control', 'placeholder'=>'Jméno vašeho týmu:')) ?>
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+							<div class="form-group">                  
+                                <?php echo $_form["pocetUcastniku"]->getControl()->addAttributes(array('type'=>'number', 'class'=>'form-control', 'placeholder'=>'počet závodníků ve Vašem týmu:')) ?>
 
                                 <p class="help-block text-danger"></p>
                             </div>
