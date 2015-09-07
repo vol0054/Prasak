@@ -28,6 +28,3 @@ services:
 	- App\Model\RegistrationModel
 	- App\Model\HospodaModel
 	- App\Model\OcoJdeModel
-
-extensions:
-	map: Oli\GoogleAPI\MapApiExtension
