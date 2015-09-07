@@ -6,20 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'GeoJSON\\Feature' => $vendorDir . '/george-oakling/geojson/src/Feature.php',
-    'GeoJSON\\FeatureCollection' => $vendorDir . '/george-oakling/geojson/src/FeatureCollection.php',
-    'GeoJSON\\GeometryCollection' => $vendorDir . '/george-oakling/geojson/src/Types.php',
-    'GeoJSON\\LineString' => $vendorDir . '/george-oakling/geojson/src/Types.php',
-    'GeoJSON\\MultiLineString' => $vendorDir . '/george-oakling/geojson/src/Types.php',
-    'GeoJSON\\MultiPoint' => $vendorDir . '/george-oakling/geojson/src/Types.php',
-    'GeoJSON\\MultiPolygon' => $vendorDir . '/george-oakling/geojson/src/Types.php',
-    'GeoJSON\\Point' => $vendorDir . '/george-oakling/geojson/src/Types.php',
-    'GeoJSON\\Polygon' => $vendorDir . '/george-oakling/geojson/src/Types.php',
-    'GoogleMap\\DI\\GoogleMapExtension' => $vendorDir . '/george-oakling/googlemap/src/GoogleMap/DI/GoogleMapExtension.php',
-    'GoogleMap\\GoogleMapComponent' => $vendorDir . '/george-oakling/googlemap/src/GoogleMap/GoogleMapComponent.php',
-    'GoogleMap\\IFeatureCollectionProvider' => $vendorDir . '/george-oakling/googlemap/src/GoogleMap/IFeatureCollectionProvider.php',
-    'GoogleMap\\IGoogleMapComponent' => $vendorDir . '/george-oakling/googlemap/src/GoogleMap/IGoogleMapComponent.php',
-    'GoogleMap\\SampleFeatureCollectionProvider' => $vendorDir . '/george-oakling/googlemap/src/GoogleMap/SampleFeatureCollectionProvider.php',
     'Latte\\CompileException' => $vendorDir . '/latte/latte/src/Latte/exceptions.php',
     'Latte\\Compiler' => $vendorDir . '/latte/latte/src/Latte/Compiler.php',
     'Latte\\Engine' => $vendorDir . '/latte/latte/src/Latte/Engine.php',
