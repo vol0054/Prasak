@@ -28,3 +28,24 @@ services:
 	- App\Model\RegistrationModel
 	- App\Model\HospodaModel
 	- App\Model\OcoJdeModel
+
+extensions:
+    console: Kdyby\Console\DI\ConsoleExtension
+    events: Kdyby\Events\DI\EventsExtension
+    annotations: Kdyby\Annotations\DI\AnnotationsExtension
+    doctrine: Kdyby\Doctrine\DI\OrmExtension
+
+database:
+		default:
+			dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
+			user: %database.user%
+			password: %database.password%
+			reflection: discovered
+doctrine:
+    default:
+        host: %database.host%
+        user: %database.user%
+        password: %database.password%
+        dbname: %database.dbname%
+        metadata:
+            App: %appDir%

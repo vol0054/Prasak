@@ -8,9 +8,10 @@ class HospodaModel extends BaseModel{
 	TableName= 'hospoda';
     
     /** @var return all rows from table "hospoda" */
-    public function getAllPub(){
+    public function getAllPub()
+	{
 	
-	return $this->database->table(self::TableName);
+		return $this->database->table(self::TableName);
 	
     }
     

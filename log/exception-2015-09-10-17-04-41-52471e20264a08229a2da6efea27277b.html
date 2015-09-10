@@ -1,0 +1,1378 @@
+<!DOCTYPE html><!-- "' --></script></style></pre></xmp></table></a></abbr></address></article></aside></audio></b></bdi></bdo></blockquote></button></canvas></caption></cite></code></datalist></del></details></dfn></div></dl></em></fieldset></figcaption></figure></footer></form></h1></h2></h3></h4></h5></h6></header></hgroup></i></iframe></ins></kbd></label></legend></map></mark></menu></meter></nav></noscript></object></ol></optgroup></output></progress></q></rp></rt></ruby></s></samp></section></select></small></span></strong></sub></summary></sup></textarea></time></title></tr></u></ul></var></video>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="generator" content="Tracy by Nette Framework">
+
+	<title>Nette\IOException</title><!-- Unable to acquire exclusive lock on '/var/www/html/Prasak/app/../temp/cache/Nette.Configurator/3e864fa1b157ba8704cf8aefe75b9ff4.php.lock'. -->
+
+	<style type="text/css" class="tracy-debug">
+	/** * This file is part of the Tracy (http://tracy.nette.org) */ html { overflow-y: scroll; } #tracyBluescreen { font: 9pt/1.5 Verdana, sans-serif; background: white; color: #333; position: absolute; z-index: 20000; left: 0; top: 0; width: 100%; text-align: left; } #tracyBluescreen * { font: inherit; color: inherit; background: transparent; border: none; margin: 0; padding: 0; text-align: inherit; text-indent: 0; } #tracyBluescreen b { font-weight: bold; } #tracyBluescreen i { font-style: italic; } #tracyBluescreen a { text-decoration: none; color: #328ADC; padding: 2px 4px; margin: -2px -4px; } #tracyBluescreen a:hover, #tracyBluescreen a:active, #tracyBluescreen a:focus { color: #085AA3; } #tracyBluescreenIcon { position: absolute; right: .5em; top: .5em; text-decoration: none; background: #CD1818; color: white !important; padding: 3px; } #tracyBluescreenError { background: #CD1818; color: white; font: 13pt/1.5 Verdana, sans-serif !important; display: block; } #tracyBluescreenError #tracyBsSearch { color: #CD1818; font-size: .7em; } #tracyBluescreenError:hover #tracyBsSearch { color: #ED8383; } #tracyBluescreen h1 { font-size: 18pt; font-weight: normal; text-shadow: 1px 1px 0 rgba(0, 0, 0, .4); margin: .7em 0; } #tracyBluescreen h2 { font: 14pt/1.5 sans-serif !important; color: #888; margin: .6em 0; } #tracyBluescreen h3 { font: bold 10pt/1.5 Verdana, sans-serif !important; margin: 1em 0; padding: 0; } #tracyBluescreen p, #tracyBluescreen pre { margin: .8em 0 } #tracyBluescreen pre, #tracyBluescreen code, #tracyBluescreen table { font: 9pt/1.5 Consolas, monospace !important; } #tracyBluescreen pre, #tracyBluescreen table { background: #FDF5CE; padding: .4em .7em; border: 1px dotted silver; overflow: auto; } #tracyBluescreen table pre { padding: 0; margin: 0; border: none; } #tracyBluescreen table { border-collapse: collapse; width: 100%; } #tracyBluescreen td, #tracyBluescreen th { vertical-align: top; text-align: left; padding: 2px 6px; border: 1px solid #e6dfbf; } #tracyBluescreen th { font-weight: bold; } #tracyBluescreen tr > :first-child { width: 20%; } #tracyBluescreen tr:nth-child(2n), #tracyBluescreen tr:nth-child(2n) pre { background-color: #F7F0CB; } #tracyBluescreen ol { margin: 1em 0; padding-left: 2.5em; } #tracyBluescreen ul { font: 7pt/1.5 Verdana, sans-serif !important; padding: 2em 4em; margin: 1em 0 0; color: #777; background: #F6F5F3; border-top: 1px solid #DDD; } #tracyBluescreenLogo a { position: absolute; bottom: 0; right: 0; width: 100px; height: 50px; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAUBAMAAAD/1DctAAAAMFBMVEWupZzj39rEvbTy8O3X0sz9/PvGwLu8tavQysHq6OS0rKP5+Pbd2dT29fPMxbzPx8DKErMJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGUlEQVQoFX3TQWgTQRQA0MWLIJJDYehBTykhG5ERTx56K1u8eEhCYtomE7x5L4iLh0ViF7egewuFFqSIYE6hIHsIYQ6CQSg9CDKn4QsNCRlB59C74J/ZNHW1+An5+bOPyf6/s46oz2P+A0yIeZZ2ieEHi6TOnLKTxvWq+b52mxlVO3xnM1s7xLX1504XQH65OnW2dBqn7cCkYsFsfYsWpyY/2salmFTpEyzeR8zosYqMdiPDXdyU52K1wgEa/SjGpdEwUAxqvRfckQCDOyFearsEHe2grvkh/cFAHKvdtI3lcVceKQIOFpv+FOZaNPQBwJZLPp+hfrvT5JZXaUFsR8zqQc9qSgAharkfS5M/5F6nGJJAtXq/eLr3ucZpHccSxOOIPaQhtHohpCH2Xu6rLmQ0djnr4/+J3C6v+AW8/XWYxwYNdlhWj/P5fPSTQwVr0T9lGxdaBCqErNZaqYnEwbkjEB3NasGF3lPdrHa1nnxNOMgj0+neePUPjd2v/qVvUv29ifvc19huQ48qwXShy/9o8o3OSk0cs37mOFd0Ydgvsf/oZEnPVtggfd66lORn9mDyyzXU13SRtH2L6aR5T/snGAcZPfAXz5J1YlJWBEuxdMYqQecpBrlM49xAbmqyHA+xlA1FxBtqT2xmJoNXZlIt74ZBLeJ9ZGDqByNI7p543idzJ23vXEv7IgnsxiS+eNtwNbFdLq7+Bi4wQ0I4SVb9AAAAAElFTkSuQmCC') no-repeat; opacity: .6; padding: 0; margin: 0; } #tracyBluescreenLogo a:hover, #tracyBluescreenLogo a:active, #tracyBluescreenLogo a:focus { opacity: 1; transition: opacity 0.1s; } #tracyBluescreen div.panel { padding: 1px 25px; } #tracyBluescreen div.inner { background: #F4F3F1; padding: .1em 1em 1em; border-radius: 8px; } #tracyBluescreen .outer { overflow: auto; } /* source code */ #tracyBluescreen pre.php div { min-width: 100%; float: left; white-space: pre; } #tracyBluescreen .highlight { background: #CD1818; color: white; font-weight: bold; font-style: normal; display: block; padding: 0 .4em; margin: 0 -.4em; } #tracyBluescreen .line { color: #9F9C7F; font-weight: normal; font-style: normal; } #tracyBluescreen pre:hover span[title] { border-bottom: 1px solid rgba(0, 0, 0, 0.2); } #tracyBluescreen a[href^=editor\:] { color: inherit; border-bottom: 1px dotted rgba(0, 0, 0, .2); } #tracyBluescreen span[data-tracy-href] { border-bottom: 1px dotted rgba(0, 0, 0, .2); } /* toggle */ html.tracy-js #tracyBluescreen .tracy-collapsed { display: none; } html.tracy-js #tracyBluescreen .tracy-toggle.tracy-collapsed { display: inline; } #tracyBluescreen .tracy-toggle { cursor: pointer; } #tracyBluescreen .tracy-toggle:after { content: " ▼"; opacity: .4; } #tracyBluescreen .tracy-toggle.tracy-collapsed:after { content: " ►"; opacity: .4; } /* dump */ #tracyBluescreen .tracy-dump-array, #tracyBluescreen .tracy-dump-object { color: #C22; } #tracyBluescreen .tracy-dump-string { color: #35D; } #tracyBluescreen .tracy-dump-number { color: #090; } #tracyBluescreen .tracy-dump-null, #tracyBluescreen .tracy-dump-bool { color: #850; } #tracyBluescreen .tracy-dump-visibility, #tracyBluescreen .tracy-dump-hash { font-size: 85%; color: #998; } #tracyBluescreen .tracy-dump-indent { display: none; } #tracyBluescreen pre.tracy-dump div { padding-left: 3ex; } #tracyBluescreen pre.tracy-dump div div { border-left: 1px solid rgba(0, 0, 0, .1); margin-left: .5ex; } #tracyBluescreen .caused { float: right; padding: .3em .6em; background: #df8075; border-radius: 0 0 0 8px; white-space: nowrap; } #tracyBluescreen .caused a { color: white; } 	</style>
+	<script>document.documentElement.className+=' tracy-js'</script>
+</head>
+
+
+<body>
+<div id="tracyBluescreen">
+	<a id="tracyBluescreenIcon" href="#" class="tracy-toggle"></a>
+	<div>
+		<div id="tracyBluescreenError" class="panel">
+			<h1>Nette\IOException</h1>
+
+			<p>Unable to acquire exclusive lock on '/var/www/html/Prasak/app/../temp/cache/Nette.Configurator/3e864fa1b157ba8704cf8aefe75b9ff4.php.lock'. <a href="https://www.google.com/search?sourceid=tracy&amp;q=Nette%5CIOException+Unable+to+acquire+exclusive+lock+on+." id="tracyBsSearch" rel="noreferrer">search&#x25ba;</a></p>
+		</div>
+
+		
+
+				
+			
+
+									
+
+						
+			<div class="panel">
+			<h2><a href="#tracyBsPnl1" class="tracy-toggle tracy-collapsed">Source file</a></h2>
+
+			<div id="tracyBsPnl1" class="tracy-collapsed inner">
+				<p><b>File:</b> <a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2FPrasak%2Fvendor%2Fnette%2Fdi%2Fsrc%2FDI%2FContainerFactory.php&amp;line=117" title="/var/www/html/Prasak/vendor/nette/di/src/DI/ContainerFactory.php:117">/var/www/html/Prasak/vendor/nette/di/src/DI/<b>ContainerFactory.php</b>:117</a></p>
+				<pre data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2FPrasak%2Fvendor%2Fnette%2Fdi%2Fsrc%2FDI%2FContainerFactory.php&amp;line=117" class='php'><div><code><span style="color: #06B"><span style="color: #998; font-style: italic"><span class='line'>107:</span>        </span><span style="color: #D24; font-weight: bold">private function </span><span style="color: #000">loadClass</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>108:</span>        {
+<span class='line'>109:</span>            </span><span style="color: #000">$key </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">md5</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">serialize</span><span style="color: #D24; font-weight: bold">(array(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">config</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">configFiles</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">class</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">parentClass</span><span style="color: #D24; font-weight: bold">)));
+<span class='line'>110:</span>            </span><span style="color: #000">$file </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #080">"</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">tempDirectory</span><span style="color: #080">/</span><span style="color: #000">$key</span><span style="color: #080">.php"</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>111:</span>            if (!</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isExpired</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$file</span><span style="color: #D24; font-weight: bold">) &amp;&amp; (@include </span><span style="color: #000">$file</span><span style="color: #D24; font-weight: bold">) !== </span><span style="color: #000">FALSE</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>112:</span>                return;
+<span class='line'>113:</span>            }
+<span class='line'>114:</span>    
+<span class='line'>115:</span>            </span><span style="color: #000">$handle </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">fopen</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"</span><span style="color: #000">$file</span><span style="color: #080">.lock"</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'c+'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>116:</span>            if (!</span><span style="color: #000">$handle </span><span style="color: #D24; font-weight: bold">|| !</span><span style="color: #000">flock</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$handle</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">LOCK_EX</span><span style="color: #D24; font-weight: bold">)) {
+<span class='highlight'>117:                throw new Nette\IOException("Unable to acquire exclusive lock on '$file.lock'.");
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #000"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>118:</span>            }
+<span class='line'>119:</span>    
+<span class='line'>120:</span>            if (!</span><span style="color: #000">is_file</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$file</span><span style="color: #D24; font-weight: bold">) || </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isExpired</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$file</span><span style="color: #D24; font-weight: bold">)) {
+<span class='line'>121:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">dependencies </span><span style="color: #D24; font-weight: bold">= array();
+</span></span></code></div></pre>			</div></div>
+
+
+									<div class="panel">
+				<h2><a href="#tracyBsPnl2" class="tracy-toggle">Call stack</a></h2>
+
+				<div id="tracyBsPnl2" class="inner">
+				<ol>
+										<li><p>
+
+											<a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2FPrasak%2Fvendor%2Fnette%2Fdi%2Fsrc%2FDI%2FContainerFactory.php&amp;line=57" title="/var/www/html/Prasak/vendor/nette/di/src/DI/ContainerFactory.php:57">/var/www/html/Prasak/vendor/nette/di/src/DI/<b>ContainerFactory.php</b>:57</a>					
+					<a href="#tracyBsSrc1-0" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+										Nette\DI\ContainerFactory-&gt;										loadClass
+					()
+					</p>
+
+											<div class="tracy-collapsed" id="tracyBsSrc1-0"><pre data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2FPrasak%2Fvendor%2Fnette%2Fdi%2Fsrc%2FDI%2FContainerFactory.php&amp;line=57" class='php'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>47:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">tempDirectory </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$tempDirectory</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>48:</span>        }
+<span class='line'>49:</span>    
+<span class='line'>50:</span>    
+<span class='line'>51:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>52:</span>         * @return Container
+<span class='line'>53:</span>         */
+<span class='line'>54:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">create</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>55:</span>        {
+<span class='line'>56:</span>            if (!</span><span style="color: #000">class_exists</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">class</span><span style="color: #D24; font-weight: bold">)) {
+<span class='highlight'>57:                $this-&gt;loadClass();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>58:</span>            }
+<span class='line'>59:</span>            return new </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">class</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>60:</span>        }
+<span class='line'>61:</span>    
+</span></span></code></div></pre></div>
+					
+					
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2FPrasak%2Fvendor%2Fnette%2Fbootstrap%2Fsrc%2FBootstrap%2FConfigurator.php&amp;line=188" title="/var/www/html/Prasak/vendor/nette/bootstrap/src/Bootstrap/Configurator.php:188">/var/www/html/Prasak/vendor/nette/bootstrap/src/Bootstrap/<b>Configurator.php</b>:188</a>					
+					<a href="#tracyBsSrc1-1" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+										Nette\DI\ContainerFactory-&gt;										create
+					()
+					</p>
+
+											<div class="tracy-collapsed" id="tracyBsSrc1-1"><pre data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2FPrasak%2Fvendor%2Fnette%2Fbootstrap%2Fsrc%2FBootstrap%2FConfigurator.php&amp;line=188" class='php'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>178:</span>            return </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>179:</span>        }
+<span class='line'>180:</span>    
+<span class='line'>181:</span>    
+<span class='line'>182:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>183:</span>         * Returns system DI container.
+<span class='line'>184:</span>         * @return \SystemContainer|DI\Container
+<span class='line'>185:</span>         */
+<span class='line'>186:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">createContainer</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>187:</span>        {
+<span class='highlight'>188:            $container = $this-&gt;createContainerFactory()-&gt;create();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>189:</span>            </span><span style="color: #000">$container</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">initialize</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>190:</span>            if (</span><span style="color: #000">class_exists</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'Nette\Environment'</span><span style="color: #D24; font-weight: bold">)) {
+<span class='line'>191:</span>                </span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Environment</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">setContext</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$container</span><span style="color: #D24; font-weight: bold">); </span><span style="color: #998; font-style: italic">// back compatibility
+<span class='line'>192:</span>            </span><span style="color: #D24; font-weight: bold">}
+</span></span></code></div></pre></div>
+					
+					
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2FPrasak%2Fapp%2Fbootstrap.php&amp;line=19" title="/var/www/html/Prasak/app/bootstrap.php:19">/var/www/html/Prasak/app/<b>bootstrap.php</b>:19</a>					
+					<a href="#tracyBsSrc1-2" class="tracy-toggle">source</a>&nbsp; 
+										Nette\Configurator-&gt;										createContainer
+					()
+					</p>
+
+											<div  id="tracyBsSrc1-2"><pre data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2FPrasak%2Fapp%2Fbootstrap.php&amp;line=19" class='php'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'> 9:</span>    
+<span class='line'>10:</span>    </span><span style="color: #000">$configurator</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">setTempDirectory</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/../temp'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>11:</span>    
+<span class='line'>12:</span>    </span><span style="color: #000">$configurator</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">createRobotLoader</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>13:</span>        -&gt;</span><span style="color: #000">addDirectory</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">__DIR__</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>14:</span>        -&gt;</span><span style="color: #000">register</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>15:</span>    
+<span class='line'>16:</span>    </span><span style="color: #000">$configurator</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">addConfig</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/config/config.neon'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>17:</span>    </span><span style="color: #000">$configurator</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">addConfig</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/config/config.local.neon'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>18:</span>    
+<span class='highlight'>19:    $container = $configurator-&gt;createContainer();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>20:</span>    </span><span style="color: #998; font-style: italic">//MultipleFileUpload\MultipleFileUpload::register();
+<span class='line'>21:</span>    
+<span class='line'>22:</span>    </span><span style="color: #D24; font-weight: bold">return </span><span style="color: #000">$container</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>23:</span>    </span>
+</span></code></div></pre></div>
+					
+					
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2FPrasak%2Fwww%2Findex.php&amp;line=6" title="/var/www/html/Prasak/www/index.php:6">/var/www/html/Prasak/www/<b>index.php</b>:6</a>					
+					<a href="#tracyBsSrc1-3" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+																				require
+					(<a href="#tracyBsArgs1-3" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed" id="tracyBsSrc1-3"><pre data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2FPrasak%2Fwww%2Findex.php&amp;line=6" class='php'><div><code><span style="color: #06B"><span class='line'>1:</span>    <span style="color: #000">&lt;?php
+<span class='line'>2:</span>    
+<span class='line'>3:</span>    </span><span style="color: #998; font-style: italic">// Uncomment this line if you must temporarily take down your site for maintenance.
+<span class='line'>4:</span>    // require '.maintenance.php';
+<span class='line'>5:</span>    
+<span class='highlight'>6:    $container = require __DIR__ . '/../app/bootstrap.php';
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>7:</span>    
+<span class='line'>8:</span>    </span><span style="color: #000">$container</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'application'</span><span style="color: #D24; font-weight: bold">)-&gt;</span><span style="color: #000">run</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>9:</span>    </span>
+</span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer" id="tracyBsArgs1-3">
+						<table>
+						<tr><th>#0</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/var/www/html/Prasak/app/bootstrap.php"</span> (38)
+</pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+									</ol>
+			</div></div>
+			
+
+			
+				
+
+								
+
+		<div class="panel">
+		<h2><a href="#tracyBsPnl3" class="tracy-toggle tracy-collapsed">Environment</a></h2>
+
+		<div id="tracyBsPnl3" class="tracy-collapsed inner">
+			<h3><a href="#tracyBsPnl4" class="tracy-toggle">$_SERVER</a></h3>
+			<div id="tracyBsPnl4" class="outer">
+			<table>
+			<tr><th>XDG_VTNR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"1"</span>
+</pre>
+</td></tr>
+<tr><th>XDG_SESSION_ID</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"1"</span>
+</pre>
+</td></tr>
+<tr><th>HOSTNAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"localhost.localdomain"</span> (21)
+</pre>
+</td></tr>
+<tr><th>GPG_AGENT_INFO</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/run/user/1000/keyring/gpg:0:1"</span> (30)
+</pre>
+</td></tr>
+<tr><th>SHELL</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/bin/bash"</span> (9)
+</pre>
+</td></tr>
+<tr><th>TERM</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"xterm-256color"</span> (14)
+</pre>
+</td></tr>
+<tr><th>VTE_VERSION</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"3803"</span> (4)
+</pre>
+</td></tr>
+<tr><th>XDG_MENU_PREFIX</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"gnome-"</span> (6)
+</pre>
+</td></tr>
+<tr><th>HISTSIZE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"1000"</span> (4)
+</pre>
+</td></tr>
+<tr><th>GJS_DEBUG_OUTPUT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"stderr"</span> (6)
+</pre>
+</td></tr>
+<tr><th>WINDOWID</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"44040198"</span> (8)
+</pre>
+</td></tr>
+<tr><th>OLDPWD</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/var/www/html/Prasak"</span> (20)
+</pre>
+</td></tr>
+<tr><th>QTDIR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/usr/lib64/qt-3.3"</span> (17)
+</pre>
+</td></tr>
+<tr><th>QTINC</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/usr/lib64/qt-3.3/include"</span> (25)
+</pre>
+</td></tr>
+<tr><th>GJS_DEBUG_TOPICS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"JS ERROR;JS LOG"</span> (15)
+</pre>
+</td></tr>
+<tr><th>QT_GRAPHICSSYSTEM_CHECKED</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"1"</span>
+</pre>
+</td></tr>
+<tr><th>USER</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"KytaVeprova"</span> (11)
+</pre>
+</td></tr>
+<tr><th>LS_COLORS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;1 ... "</span> (1680)
+</pre>
+</td></tr>
+<tr><th>SSH_AUTH_SOCK</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/run/user/1000/keyring/ssh"</span> (26)
+</pre>
+</td></tr>
+<tr><th>SESSION_MANAGER</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"local/unix:@/tmp/.ICE-unix/2019,unix/unix:/tmp/.ICE-unix/2019"</span> (61)
+</pre>
+</td></tr>
+<tr><th>USERNAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"KytaVeprova"</span> (11)
+</pre>
+</td></tr>
+<tr><th>PATH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/KytaVeprova/.local/bin:/home/KytaVeprova/bin"</span> (133)
+</pre>
+</td></tr>
+<tr><th>MAIL</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/var/spool/mail/KytaVeprova"</span> (27)
+</pre>
+</td></tr>
+<tr><th>DESKTOP_SESSION</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"gnome"</span> (5)
+</pre>
+</td></tr>
+<tr><th>QT_IM_MODULE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"ibus"</span> (4)
+</pre>
+</td></tr>
+<tr><th>PWD</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/var/www/html/Prasak/www"</span> (24)
+</pre>
+</td></tr>
+<tr><th>XMODIFIERS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"@im=ibus"</span> (8)
+</pre>
+</td></tr>
+<tr><th>LANG</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"cs_CZ.utf8"</span> (10)
+</pre>
+</td></tr>
+<tr><th>MODULEPATH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles"</span> (112)
+</pre>
+</td></tr>
+<tr><th>GDM_LANG</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"cs_CZ.utf8"</span> (10)
+</pre>
+</td></tr>
+<tr><th>KDEDIRS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/usr"</span> (4)
+</pre>
+</td></tr>
+<tr><th>LOADEDMODULES</th><td><pre class="tracy-dump"><span class="tracy-dump-string">""</span>
+</pre>
+</td></tr>
+<tr><th>GDMSESSION</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"gnome"</span> (5)
+</pre>
+</td></tr>
+<tr><th>SSH_ASKPASS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/usr/libexec/openssh/gnome-ssh-askpass"</span> (38)
+</pre>
+</td></tr>
+<tr><th>HISTCONTROL</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"ignoredups"</span> (10)
+</pre>
+</td></tr>
+<tr><th>HOME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/home/KytaVeprova"</span> (17)
+</pre>
+</td></tr>
+<tr><th>SHLVL</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"2"</span>
+</pre>
+</td></tr>
+<tr><th>XDG_SEAT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"seat0"</span> (5)
+</pre>
+</td></tr>
+<tr><th>GNOME_DESKTOP_SESSION_ID</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"this-is-deprecated"</span> (18)
+</pre>
+</td></tr>
+<tr><th>XDG_SESSION_DESKTOP</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"gnome"</span> (5)
+</pre>
+</td></tr>
+<tr><th>LOGNAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"KytaVeprova"</span> (11)
+</pre>
+</td></tr>
+<tr><th>QTLIB</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/usr/lib64/qt-3.3/lib"</span> (21)
+</pre>
+</td></tr>
+<tr><th>CVS_RSH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"ssh"</span> (3)
+</pre>
+</td></tr>
+<tr><th>DBUS_SESSION_BUS_ADDRESS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"unix:abstract=/tmp/dbus-txWiDi1xOa,guid=d9a3dc458a1d47f06e5bf23b55f19841"</span> (72)
+</pre>
+</td></tr>
+<tr><th>MODULESHOME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/usr/share/Modules"</span> (18)
+</pre>
+</td></tr>
+<tr><th>LESSOPEN</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"||/usr/bin/lesspipe.sh %s"</span> (25)
+</pre>
+</td></tr>
+<tr><th>WINDOWPATH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"1"</span>
+</pre>
+</td></tr>
+<tr><th>XDG_RUNTIME_DIR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/run/user/1000"</span> (14)
+</pre>
+</td></tr>
+<tr><th>DISPLAY</th><td><pre class="tracy-dump"><span class="tracy-dump-string">":0"</span> (2)
+</pre>
+</td></tr>
+<tr><th>XDG_CURRENT_DESKTOP</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"GNOME"</span> (5)
+</pre>
+</td></tr>
+<tr><th>XAUTHORITY</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/run/gdm/auth-for-KytaVeprova-Z4Jqcr/database"</span> (45)
+</pre>
+</td></tr>
+<tr><th>BASH_FUNC_module()</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"() {  eval `/usr/bin/modulecmd bash $*`
+}"</span> (41)
+</pre>
+</td></tr>
+<tr><th>BASH_FUNC_scl()</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"() {  local CMD=$1;
+ if [ "$CMD" = "load" -o "$CMD" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}"</span> (121)
+</pre>
+</td></tr>
+<tr><th>_</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/usr/bin/php"</span> (12)
+</pre>
+</td></tr>
+<tr><th>PHP_SELF</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"index.php"</span> (9)
+</pre>
+</td></tr>
+<tr><th>SCRIPT_NAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"index.php"</span> (9)
+</pre>
+</td></tr>
+<tr><th>SCRIPT_FILENAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"index.php"</span> (9)
+</pre>
+</td></tr>
+<tr><th>PATH_TRANSLATED</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"index.php"</span> (9)
+</pre>
+</td></tr>
+<tr><th>DOCUMENT_ROOT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">""</span>
+</pre>
+</td></tr>
+<tr><th>REQUEST_TIME_FLOAT</th><td><pre class="tracy-dump"><span class="tracy-dump-number">1441904681.4426</span>
+</pre>
+</td></tr>
+<tr><th>REQUEST_TIME</th><td><pre class="tracy-dump"><span class="tracy-dump-number">1441904681</span>
+</pre>
+</td></tr>
+<tr><th>argv</th><td><pre class="tracy-dump"><span class="tracy-toggle"><span class="tracy-dump-array">array</span> (1)</span>
+<div><span class="tracy-dump-indent">   </span><span class="tracy-dump-key">0</span> => <span class="tracy-dump-string">"index.php"</span> (9)
+</div></pre>
+</td></tr>
+<tr><th>argc</th><td><pre class="tracy-dump"><span class="tracy-dump-number">1</span>
+</pre>
+</td></tr>
+			</table>
+			</div>
+
+
+			<h3><a href="#tracyBsPnl5" class="tracy-toggle">$_SESSION</a></h3>
+			<div id="tracyBsPnl5" class="outer">
+						<p><i>empty</i></p>
+						</div>
+
+
+			
+
+			
+
+			<h3><a href="#tracyBsPnl6" class="tracy-toggle tracy-collapsed">Included files</a> (51)</h3>
+			<div id="tracyBsPnl6" class="outer tracy-collapsed">
+			<table>
+			<tr><td>/var/www/html/Prasak/www/index.php</td></tr>
+<tr><td>/var/www/html/Prasak/app/bootstrap.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/autoload.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/composer/autoload_real.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/composer/ClassLoader.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/composer/autoload_namespaces.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/composer/autoload_psr4.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/composer/autoload_classmap.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/composer/autoload_files.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/shortcuts.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/nette/Nette/loader.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/nette/Nette/Loaders/NetteLoader.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/bootstrap/src/Bootstrap/Configurator.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/utils/src/Utils/Object.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/di/src/DI/CompilerExtension.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/Tracy/Bar.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/Tracy/BlueScreen.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/Tracy/Dumper.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/latte/latte/src/Latte/exceptions.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/latte/latte/src/Latte/IMacro.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/latte/latte/src/Latte/Macros/MacroSet.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/latte/latte/src/Latte/Object.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/utils/src/Utils/ArrayHash.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/utils/src/Utils/ArrayList.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/utils/src/Utils/DateTime.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/utils/src/Utils/Image.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/utils/src/Utils/ObjectMixin.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/neon/src/Neon/Exception.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/neon/src/Neon/Entity.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/neon/src/Neon/Neon.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/nette/Nette/shortcuts.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/kdyby/events/src/Doctrine/compatibility.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/doctrine/common/lib/Doctrine/Common/EventManager.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/Tracy/Debugger.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/Tracy/DefaultBarPanel.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/Tracy/IBarPanel.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/Tracy/FireLogger.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/Tracy/Helpers.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/Tracy/Logger.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/bootstrap/src/Bridges/Framework/TracyBridge.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/nette/Nette/Framework.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/robot-loader/src/RobotLoader/RobotLoader.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/caching/src/Caching/Storages/FileStorage.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/caching/src/Caching/IStorage.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/caching/src/Caching/Cache.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/finder/src/Finder/Finder.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/finder/src/Finder/RecursiveCallbackFilterIterator.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/finder/src/Finder/CallbackFilterIterator.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/di/src/DI/ContainerFactory.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/nette/utils/src/Utils/exceptions.php</td></tr>
+<tr><td>/var/www/html/Prasak/vendor/tracy/tracy/src/Tracy/templates/bluescreen.phtml</td></tr>
+			</table>
+			</div>
+
+
+			<h3><a href="#tracyBsPnl7" class="tracy-toggle tracy-collapsed">Configuration options</a></h3>
+			<div id="tracyBsPnl7" class="outer tracy-collapsed">
+			phpinfo()
+
+
+ _______________________________________________________________________
+
+
+Configuration
+
+bcmath
+
+BCMath support => enabled
+
+Directive => Local Value => Master Value
+bcmath.scale => 0 => 0
+
+bz2
+
+BZip2 Support => Enabled
+Stream Wrapper support => compress.bzip2://
+Stream Filter support => bzip2.decompress, bzip2.compress
+BZip2 Version => 1.0.6, 6-Sept-2010
+
+calendar
+
+Calendar support => enabled
+
+Core
+
+PHP Version => 5.6.13
+
+Directive => Local Value => Master Value
+allow_url_fopen => On => On
+allow_url_include => Off => Off
+always_populate_raw_post_data => 0 => 0
+arg_separator.input => & => &
+arg_separator.output => & => &
+asp_tags => Off => Off
+auto_append_file => no value => no value
+auto_globals_jit => On => On
+auto_prepend_file => no value => no value
+browscap => no value => no value
+default_charset => UTF-8 => UTF-8
+default_mimetype => text/html => text/html
+disable_classes => no value => no value
+disable_functions => no value => no value
+display_errors => Off => Off
+display_startup_errors => Off => Off
+doc_root => no value => no value
+docref_ext => no value => no value
+docref_root => no value => no value
+enable_dl => Off => Off
+enable_post_data_reading => On => On
+error_append_string => no value => no value
+error_log => no value => no value
+error_prepend_string => no value => no value
+error_reporting => 0 => 22527
+exit_on_timeout => Off => Off
+expose_php => On => On
+extension_dir => /usr/lib64/php/modules => /usr/lib64/php/modules
+file_uploads => On => On
+highlight.comment => <font style="color: #998; font-style: italic">#998; font-style: italic</font> => <font style="color: #FF8000">#FF8000</font>
+highlight.default => <font style="color: #000">#000</font> => <font style="color: #0000BB">#0000BB</font>
+highlight.html => <font style="color: #06B">#06B</font> => <font style="color: #000000">#000000</font>
+highlight.keyword => <font style="color: #D24; font-weight: bold">#D24; font-weight: bold</font> => <font style="color: #007700">#007700</font>
+highlight.string => <font style="color: #080">#080</font> => <font style="color: #DD0000">#DD0000</font>
+html_errors => Off => Off
+ignore_repeated_errors => Off => Off
+ignore_repeated_source => Off => Off
+ignore_user_abort => Off => Off
+implicit_flush => On => On
+include_path => .:/usr/share/pear:/usr/share/php => .:/usr/share/pear:/usr/share/php
+input_encoding => no value => no value
+internal_encoding => no value => no value
+log_errors => Off => On
+log_errors_max_len => 1024 => 1024
+mail.add_x_header => On => On
+mail.force_extra_parameters => no value => no value
+mail.log => no value => no value
+max_execution_time => 0 => 0
+max_file_uploads => 20 => 20
+max_input_nesting_level => 64 => 64
+max_input_time => -1 => -1
+max_input_vars => 1000 => 1000
+memory_limit => 128M => 128M
+open_basedir => no value => no value
+output_buffering => 0 => 0
+output_encoding => no value => no value
+output_handler => no value => no value
+post_max_size => 8M => 8M
+precision => 14 => 14
+realpath_cache_size => 16K => 16K
+realpath_cache_ttl => 120 => 120
+register_argc_argv => On => On
+report_memleaks => On => On
+report_zend_debug => Off => Off
+request_order => GP => GP
+sendmail_from => no value => no value
+sendmail_path => /usr/sbin/sendmail -t -i => /usr/sbin/sendmail -t -i
+serialize_precision => 17 => 17
+short_open_tag => Off => Off
+SMTP => localhost => localhost
+smtp_port => 25 => 25
+sql.safe_mode => Off => Off
+sys_temp_dir => no value => no value
+track_errors => Off => Off
+unserialize_callback_func => no value => no value
+upload_max_filesize => 2M => 2M
+upload_tmp_dir => no value => no value
+user_dir => no value => no value
+user_ini.cache_ttl => 300 => 300
+user_ini.filename => .user.ini => .user.ini
+variables_order => GPCS => GPCS
+xmlrpc_error_number => 0 => 0
+xmlrpc_errors => Off => Off
+zend.detect_unicode => On => On
+zend.enable_gc => On => On
+zend.multibyte => Off => Off
+zend.script_encoding => no value => no value
+
+ctype
+
+ctype functions => enabled
+
+curl
+
+cURL support => enabled
+cURL Information => 7.37.0
+Age => 3
+Features
+AsynchDNS => Yes
+CharConv => No
+Debug => No
+GSS-Negotiate => Yes
+IDN => Yes
+IPv6 => Yes
+krb4 => No
+Largefile => Yes
+libz => Yes
+NTLM => Yes
+NTLMWB => Yes
+SPNEGO => No
+SSL => Yes
+SSPI => No
+TLS-SRP => No
+Protocols => dict, file, ftp, ftps, gopher, http, https, imap, imaps, ldap, ldaps, pop3, pop3s, rtsp, scp, sftp, smtp, smtps, telnet, tftp
+Host => x86_64-redhat-linux-gnu
+SSL Version => NSS/3.18 Basic ECC
+ZLib Version => 1.2.8
+libSSH Version => libssh2/1.5.0
+
+date
+
+date/time support => enabled
+"Olson" Timezone Database Version => 0.system
+Timezone Database => internal
+Default timezone => UTC
+
+Directive => Local Value => Master Value
+date.default_latitude => 31.7667 => 31.7667
+date.default_longitude => 35.2333 => 35.2333
+date.sunrise_zenith => 90.583333 => 90.583333
+date.sunset_zenith => 90.583333 => 90.583333
+date.timezone => no value => no value
+
+dom
+
+DOM/XML => enabled
+DOM/XML API Version => 20031129
+libxml Version => 2.9.1
+HTML Support => enabled
+XPath Support => enabled
+XPointer Support => enabled
+Schema Support => enabled
+RelaxNG Support => enabled
+
+enchant
+
+enchant support => enabled
+Version => 1.1.0
+Libenchant Version => 1.5.x
+Revision => $Id: d7c115e366f245f6234c5d1b1f3e93cf5500ab14 $
+
+myspell => Myspell Provider => /usr/lib64/enchant/libenchant_myspell.so
+
+ereg
+
+Regex Library => Bundled library enabled
+
+exif
+
+EXIF Support => enabled
+EXIF Version => 1.4 $Id: a0425de51ec3270d01522bf62d41bfe78893f78d $
+Supported EXIF Version => 0220
+Supported filetypes => JPEG,TIFF
+
+Directive => Local Value => Master Value
+exif.decode_jis_intel => JIS => JIS
+exif.decode_jis_motorola => JIS => JIS
+exif.decode_unicode_intel => UCS-2LE => UCS-2LE
+exif.decode_unicode_motorola => UCS-2BE => UCS-2BE
+exif.encode_jis => no value => no value
+exif.encode_unicode => ISO-8859-15 => ISO-8859-15
+
+fileinfo
+
+fileinfo support => enabled
+version => 1.0.5
+libmagic => 517
+
+filter
+
+Input Validation and Filtering => enabled
+Revision => $Id: 86120bba568c551914a35636ec408f1e7e66af32 $
+
+Directive => Local Value => Master Value
+filter.default => unsafe_raw => unsafe_raw
+filter.default_flags => no value => no value
+
+ftp
+
+FTP support => enabled
+
+gd
+
+GD Support => enabled
+GD headers Version => 2.1.1
+GD library Version => 2.1.1
+FreeType Support => enabled
+FreeType Linkage => with freetype
+FreeType Version => 2.5.3
+T1Lib Support => enabled
+GIF Read Support => enabled
+GIF Create Support => enabled
+JPEG Support => enabled
+libJPEG Version => 6b
+PNG Support => enabled
+libPNG Version => 1.6.10
+WBMP Support => enabled
+XPM Support => enabled
+libXpm Version => 30411
+XBM Support => enabled
+WebP Support => enabled
+
+Directive => Local Value => Master Value
+gd.jpeg_ignore_warning => 0 => 0
+
+gettext
+
+GetText Support => enabled
+
+gmp
+
+gmp support => enabled
+GMP version => 6.0.0
+
+hash
+
+hash support => enabled
+Hashing Engines => md2 md4 md5 sha1 sha224 sha256 sha384 sha512 ripemd128 ripemd160 ripemd256 ripemd320 whirlpool tiger128,3 tiger160,3 tiger192,3 tiger128,4 tiger160,4 tiger192,4 snefru snefru256 gost gost-crypto adler32 crc32 crc32b fnv132 fnv1a32 fnv164 fnv1a64 joaat haval128,3 haval160,3 haval192,3 haval224,3 haval256,3 haval128,4 haval160,4 haval192,4 haval224,4 haval256,4 haval128,5 haval160,5 haval192,5 haval224,5 haval256,5 
+
+iconv
+
+iconv support => enabled
+iconv implementation => glibc
+iconv library version => 2.20
+
+Directive => Local Value => Master Value
+iconv.input_encoding => no value => no value
+iconv.internal_encoding => no value => no value
+iconv.output_encoding => no value => no value
+
+intl
+
+Internationalization support => enabled
+version => 1.1.0
+ICU version => 52.1
+ICU Data version => 52.1
+
+Directive => Local Value => Master Value
+intl.default_locale => no value => no value
+intl.error_level => 0 => 0
+intl.use_exceptions => 0 => 0
+
+json
+
+json support => enabled
+json version => 1.3.8
+JSON-C version (bundled) => 0.11
+
+ldap
+
+LDAP Support => enabled
+RCS Version => $Id: bc1c7bcde6958962f588d265562e15157138d70d $
+Total Links => 0/unlimited
+API Version => 3001
+Vendor Name => OpenLDAP
+Vendor Version => 20440
+SASL Support => Enabled
+
+Directive => Local Value => Master Value
+ldap.max_links => Unlimited => Unlimited
+
+libxml
+
+libXML support => active
+libXML Compiled Version => 2.9.1
+libXML Loaded Version => 20901
+libXML streams => enabled
+
+mbstring
+
+Multibyte Support => enabled
+Multibyte string engine => libmbfl
+HTTP input encoding translation => disabled
+libmbfl version => 1.3.2
+
+mbstring extension makes use of "streamable kanji code filter and converter", which is distributed under the GNU Lesser General Public License version 2.1.
+
+Multibyte (japanese) regex support => enabled
+Multibyte regex (oniguruma) backtrack check => On
+Multibyte regex (oniguruma) version => 5.9.5
+
+Directive => Local Value => Master Value
+mbstring.detect_order => no value => no value
+mbstring.encoding_translation => Off => Off
+mbstring.func_overload => 0 => 0
+mbstring.http_input => no value => no value
+mbstring.http_output => no value => no value
+mbstring.http_output_conv_mimetypes => ^(text/|application/xhtml\+xml) => ^(text/|application/xhtml\+xml)
+mbstring.internal_encoding => no value => no value
+mbstring.language => neutral => neutral
+mbstring.strict_detection => Off => Off
+mbstring.substitute_character => no value => no value
+
+mcrypt
+
+mcrypt support => enabled
+mcrypt_filter support => enabled
+Version => 2.5.8
+Api No => 20021217
+Supported ciphers => cast-128 gost rijndael-128 twofish arcfour cast-256 loki97 rijndael-192 saferplus wake blowfish-compat des rijndael-256 serpent xtea blowfish enigma rc2 tripledes 
+Supported modes => cbc cfb ctr ecb ncfb nofb ofb stream 
+
+Directive => Local Value => Master Value
+mcrypt.algorithms_dir => no value => no value
+mcrypt.modes_dir => no value => no value
+
+mhash
+
+MHASH support => Enabled
+MHASH API Version => Emulated Support
+
+mysql
+
+MySQL Support => enabled
+Active Persistent Links => 0
+Active Links => 0
+Client API version => mysqlnd 5.0.11-dev - 20120503 - $Id: 3c688b6bbc30d36af3ac34fdd4b7b5b787fe5555 $
+
+Directive => Local Value => Master Value
+mysql.allow_local_infile => On => On
+mysql.allow_persistent => On => On
+mysql.connect_timeout => 60 => 60
+mysql.default_host => no value => no value
+mysql.default_password => no value => no value
+mysql.default_port => no value => no value
+mysql.default_socket => /var/lib/mysql/mysql.sock => /var/lib/mysql/mysql.sock
+mysql.default_user => no value => no value
+mysql.max_links => Unlimited => Unlimited
+mysql.max_persistent => Unlimited => Unlimited
+mysql.trace_mode => Off => Off
+
+mysqli
+
+MysqlI Support => enabled
+Client API library version => mysqlnd 5.0.11-dev - 20120503 - $Id: 3c688b6bbc30d36af3ac34fdd4b7b5b787fe5555 $
+Active Persistent Links => 0
+Inactive Persistent Links => 0
+Active Links => 0
+
+Directive => Local Value => Master Value
+mysqli.allow_local_infile => On => On
+mysqli.allow_persistent => On => On
+mysqli.default_host => no value => no value
+mysqli.default_port => 3306 => 3306
+mysqli.default_pw => no value => no value
+mysqli.default_socket => /var/lib/mysql/mysql.sock => /var/lib/mysql/mysql.sock
+mysqli.default_user => no value => no value
+mysqli.max_links => Unlimited => Unlimited
+mysqli.max_persistent => Unlimited => Unlimited
+mysqli.reconnect => Off => Off
+mysqli.rollback_on_cached_plink => Off => Off
+
+mysqlnd
+
+mysqlnd => enabled
+Version => mysqlnd 5.0.11-dev - 20120503 - $Id: 3c688b6bbc30d36af3ac34fdd4b7b5b787fe5555 $
+Compression => supported
+core SSL => supported
+extended SSL => supported
+Command buffer size => 4096
+Read buffer size => 32768
+Read timeout => 31536000
+Collecting statistics => Yes
+Collecting memory statistics => No
+Tracing => n/a
+Loaded plugins => mysqlnd,debug_trace,auth_plugin_mysql_native_password,auth_plugin_mysql_clear_password,auth_plugin_sha256_password
+API Extensions => mysql,mysqli,pdo_mysql
+
+mysqlnd statistics =>  
+bytes_sent => 0
+bytes_received => 0
+packets_sent => 0
+packets_received => 0
+protocol_overhead_in => 0
+protocol_overhead_out => 0
+bytes_received_ok_packet => 0
+bytes_received_eof_packet => 0
+bytes_received_rset_header_packet => 0
+bytes_received_rset_field_meta_packet => 0
+bytes_received_rset_row_packet => 0
+bytes_received_prepare_response_packet => 0
+bytes_received_change_user_packet => 0
+packets_sent_command => 0
+packets_received_ok => 0
+packets_received_eof => 0
+packets_received_rset_header => 0
+packets_received_rset_field_meta => 0
+packets_received_rset_row => 0
+packets_received_prepare_response => 0
+packets_received_change_user => 0
+result_set_queries => 0
+non_result_set_queries => 0
+no_index_used => 0
+bad_index_used => 0
+slow_queries => 0
+buffered_sets => 0
+unbuffered_sets => 0
+ps_buffered_sets => 0
+ps_unbuffered_sets => 0
+flushed_normal_sets => 0
+flushed_ps_sets => 0
+ps_prepared_never_executed => 0
+ps_prepared_once_executed => 0
+rows_fetched_from_server_normal => 0
+rows_fetched_from_server_ps => 0
+rows_buffered_from_client_normal => 0
+rows_buffered_from_client_ps => 0
+rows_fetched_from_client_normal_buffered => 0
+rows_fetched_from_client_normal_unbuffered => 0
+rows_fetched_from_client_ps_buffered => 0
+rows_fetched_from_client_ps_unbuffered => 0
+rows_fetched_from_client_ps_cursor => 0
+rows_affected_normal => 0
+rows_affected_ps => 0
+rows_skipped_normal => 0
+rows_skipped_ps => 0
+copy_on_write_saved => 0
+copy_on_write_performed => 0
+command_buffer_too_small => 0
+connect_success => 0
+connect_failure => 0
+connection_reused => 0
+reconnect => 0
+pconnect_success => 0
+active_connections => 0
+active_persistent_connections => 0
+explicit_close => 0
+implicit_close => 0
+disconnect_close => 0
+in_middle_of_command_close => 0
+explicit_free_result => 0
+implicit_free_result => 0
+explicit_stmt_close => 0
+implicit_stmt_close => 0
+mem_emalloc_count => 0
+mem_emalloc_amount => 0
+mem_ecalloc_count => 0
+mem_ecalloc_amount => 0
+mem_erealloc_count => 0
+mem_erealloc_amount => 0
+mem_efree_count => 0
+mem_efree_amount => 0
+mem_malloc_count => 0
+mem_malloc_amount => 0
+mem_calloc_count => 0
+mem_calloc_amount => 0
+mem_realloc_count => 0
+mem_realloc_amount => 0
+mem_free_count => 0
+mem_free_amount => 0
+mem_estrndup_count => 0
+mem_strndup_count => 0
+mem_estndup_count => 0
+mem_strdup_count => 0
+proto_text_fetched_null => 0
+proto_text_fetched_bit => 0
+proto_text_fetched_tinyint => 0
+proto_text_fetched_short => 0
+proto_text_fetched_int24 => 0
+proto_text_fetched_int => 0
+proto_text_fetched_bigint => 0
+proto_text_fetched_decimal => 0
+proto_text_fetched_float => 0
+proto_text_fetched_double => 0
+proto_text_fetched_date => 0
+proto_text_fetched_year => 0
+proto_text_fetched_time => 0
+proto_text_fetched_datetime => 0
+proto_text_fetched_timestamp => 0
+proto_text_fetched_string => 0
+proto_text_fetched_blob => 0
+proto_text_fetched_enum => 0
+proto_text_fetched_set => 0
+proto_text_fetched_geometry => 0
+proto_text_fetched_other => 0
+proto_binary_fetched_null => 0
+proto_binary_fetched_bit => 0
+proto_binary_fetched_tinyint => 0
+proto_binary_fetched_short => 0
+proto_binary_fetched_int24 => 0
+proto_binary_fetched_int => 0
+proto_binary_fetched_bigint => 0
+proto_binary_fetched_decimal => 0
+proto_binary_fetched_float => 0
+proto_binary_fetched_double => 0
+proto_binary_fetched_date => 0
+proto_binary_fetched_year => 0
+proto_binary_fetched_time => 0
+proto_binary_fetched_datetime => 0
+proto_binary_fetched_timestamp => 0
+proto_binary_fetched_string => 0
+proto_binary_fetched_blob => 0
+proto_binary_fetched_enum => 0
+proto_binary_fetched_set => 0
+proto_binary_fetched_geometry => 0
+proto_binary_fetched_other => 0
+init_command_executed_count => 0
+init_command_failed_count => 0
+com_quit => 0
+com_init_db => 0
+com_query => 0
+com_field_list => 0
+com_create_db => 0
+com_drop_db => 0
+com_refresh => 0
+com_shutdown => 0
+com_statistics => 0
+com_process_info => 0
+com_connect => 0
+com_process_kill => 0
+com_debug => 0
+com_ping => 0
+com_time => 0
+com_delayed_insert => 0
+com_change_user => 0
+com_binlog_dump => 0
+com_table_dump => 0
+com_connect_out => 0
+com_register_slave => 0
+com_stmt_prepare => 0
+com_stmt_execute => 0
+com_stmt_send_long_data => 0
+com_stmt_close => 0
+com_stmt_reset => 0
+com_stmt_set_option => 0
+com_stmt_fetch => 0
+com_deamon => 0
+bytes_received_real_data_normal => 0
+bytes_received_real_data_ps => 0
+
+OAuth
+
+OAuth support => enabled
+PLAINTEXT support => enabled
+RSA-SHA1 support => enabled
+HMAC-SHA1 support => enabled
+Request engine support => php_streams, curl
+source version => $Id: oauth.c 325799 2012-05-24 21:07:51Z jawed $
+version => 1.2.3
+
+openssl
+
+OpenSSL support => enabled
+OpenSSL Library Version => OpenSSL 1.0.1k-fips 8 Jan 2015
+OpenSSL Header Version => OpenSSL 1.0.1k-fips 8 Jan 2015
+
+Directive => Local Value => Master Value
+openssl.cafile => no value => no value
+openssl.capath => no value => no value
+
+pcntl
+
+pcntl support => enabled
+
+pcre
+
+PCRE (Perl Compatible Regular Expressions) Support => enabled
+PCRE Library Version => 8.35 2014-04-04
+
+Directive => Local Value => Master Value
+pcre.backtrack_limit => 1000000 => 1000000
+pcre.recursion_limit => 100000 => 100000
+
+PDO
+
+PDO support => enabled
+PDO drivers => mysql, sqlite
+
+pdo_mysql
+
+PDO Driver for MySQL => enabled
+Client API version => mysqlnd 5.0.11-dev - 20120503 - $Id: 3c688b6bbc30d36af3ac34fdd4b7b5b787fe5555 $
+
+Directive => Local Value => Master Value
+pdo_mysql.default_socket => /var/lib/mysql/mysql.sock => /var/lib/mysql/mysql.sock
+
+pdo_sqlite
+
+PDO Driver for SQLite 3.x => enabled
+SQLite Library => 3.8.10.2
+
+Phar
+
+Phar: PHP Archive support => enabled
+Phar EXT version => 2.0.2
+Phar API version => 1.1.1
+SVN revision => $Id: 72d7e004b07d106bb1ef7c5663a186cbae621385 $
+Phar-based phar archives => enabled
+Tar-based phar archives => enabled
+ZIP-based phar archives => enabled
+gzip compression => enabled
+bzip2 compression => enabled
+Native OpenSSL support => enabled
+
+
+Phar based on pear/PHP_Archive, original concept by Davey Shafik.
+Phar fully realized by Gregory Beaver and Marcus Boerger.
+Portions of tar implementation Copyright (c) 2003-2009 Tim Kientzle.
+Directive => Local Value => Master Value
+phar.cache_list => no value => no value
+phar.readonly => On => On
+phar.require_hash => On => On
+
+posix
+
+Revision => $Id: 5d20de77687b7d961b15450873fa23b9e64a136a $
+
+readline
+
+Readline Support => enabled
+Readline library => EditLine wrapper
+
+Directive => Local Value => Master Value
+cli.pager => no value => no value
+cli.prompt => \b \>  => \b \> 
+
+recode
+
+Recode Support => enabled
+Revision => $Id: d95ffdf43fdab6078875dc99d333da459d8d8cd6 $
+
+Reflection
+
+Reflection => enabled
+Version => $Id: eff8bdc65b0beaf8f4ade6f06f848e6d43dfd826 $
+
+session
+
+Session Support => enabled
+Registered save handlers => files user 
+Registered serializer handlers => php_serialize php php_binary wddx 
+
+Directive => Local Value => Master Value
+session.auto_start => Off => Off
+session.cache_expire => 180 => 180
+session.cache_limiter => nocache => nocache
+session.cookie_domain => no value => no value
+session.cookie_httponly => Off => Off
+session.cookie_lifetime => 0 => 0
+session.cookie_path => / => /
+session.cookie_secure => Off => Off
+session.entropy_file => /dev/urandom => /dev/urandom
+session.entropy_length => 32 => 32
+session.gc_divisor => 1000 => 1000
+session.gc_maxlifetime => 1440 => 1440
+session.gc_probability => 1 => 1
+session.hash_bits_per_character => 5 => 5
+session.hash_function => 0 => 0
+session.name => PHPSESSID => PHPSESSID
+session.referer_check => no value => no value
+session.save_handler => files => files
+session.save_path => no value => no value
+session.serialize_handler => php => php
+session.upload_progress.cleanup => On => On
+session.upload_progress.enabled => On => On
+session.upload_progress.freq => 1% => 1%
+session.upload_progress.min_freq => 1 => 1
+session.upload_progress.name => PHP_SESSION_UPLOAD_PROGRESS => PHP_SESSION_UPLOAD_PROGRESS
+session.upload_progress.prefix => upload_progress_ => upload_progress_
+session.use_cookies => On => On
+session.use_only_cookies => On => On
+session.use_strict_mode => Off => Off
+session.use_trans_sid => 0 => 0
+
+shmop
+
+shmop support => enabled
+
+SimpleXML
+
+Simplexml support => enabled
+Revision => $Id: 6b8e23a01a85046737ef7d31346da5164505c179 $
+Schema support => enabled
+
+sockets
+
+Sockets Support => enabled
+
+SPL
+
+SPL support => enabled
+Interfaces => Countable, OuterIterator, RecursiveIterator, SeekableIterator, SplObserver, SplSubject
+Classes => AppendIterator, ArrayIterator, ArrayObject, BadFunctionCallException, BadMethodCallException, CachingIterator, CallbackFilterIterator, DirectoryIterator, DomainException, EmptyIterator, FilesystemIterator, FilterIterator, GlobIterator, InfiniteIterator, InvalidArgumentException, IteratorIterator, LengthException, LimitIterator, LogicException, MultipleIterator, NoRewindIterator, OutOfBoundsException, OutOfRangeException, OverflowException, ParentIterator, RangeException, RecursiveArrayIterator, RecursiveCachingIterator, RecursiveCallbackFilterIterator, RecursiveDirectoryIterator, RecursiveFilterIterator, RecursiveIteratorIterator, RecursiveRegexIterator, RecursiveTreeIterator, RegexIterator, RuntimeException, SplDoublyLinkedList, SplFileInfo, SplFileObject, SplFixedArray, SplHeap, SplMinHeap, SplMaxHeap, SplObjectStorage, SplPriorityQueue, SplQueue, SplStack, SplTempFileObject, UnderflowException, UnexpectedValueException
+
+sqlite3
+
+SQLite3 support => enabled
+SQLite3 module version => 0.7-dev
+SQLite Library => 3.8.10.2
+
+Directive => Local Value => Master Value
+sqlite3.extension_dir => no value => no value
+
+standard
+
+Dynamic Library Support => enabled
+Path to sendmail => /usr/sbin/sendmail -t -i
+
+Directive => Local Value => Master Value
+assert.active => 1 => 1
+assert.bail => 0 => 0
+assert.callback => no value => no value
+assert.quiet_eval => 0 => 0
+assert.warning => 1 => 1
+auto_detect_line_endings => 0 => 0
+default_socket_timeout => 60 => 60
+from => no value => no value
+url_rewriter.tags => a=href,area=href,frame=src,input=src,form=fakeentry => a=href,area=href,frame=src,input=src,form=fakeentry
+user_agent => no value => no value
+
+sysvmsg
+
+sysvmsg support => enabled
+Revision => $Id: 1e821e8a0cbb868efec453560ba303e04f3a1db2 $
+
+tidy
+
+Tidy support => enabled
+libTidy Release => 25 March 2009
+Extension Version => 2.0 ($Id: e066a98a414c7f79f89f697c19c4336c61bc617b $)
+
+Directive => Local Value => Master Value
+tidy.clean_output => no value => no value
+tidy.default_config => no value => no value
+
+tokenizer
+
+Tokenizer Support => enabled
+
+twig
+
+Version => 1.21.2
+
+wddx
+
+WDDX Support => enabled
+WDDX Session Serializer => enabled
+
+xml
+
+XML Support => active
+XML Namespace Support => active
+libxml2 Version => 2.9.1
+
+xmlreader
+
+XMLReader => enabled
+
+xmlwriter
+
+XMLWriter => enabled
+
+xsl
+
+XSL => enabled
+libxslt Version => 1.1.28
+libxslt compiled against libxml Version => 2.9.1
+EXSLT => enabled
+libexslt Version => 1.1.28
+
+zip
+
+Zip => enabled
+Extension Version => $Id: 872affeb4da56999accae9cdc682d3f3bb3f3458 $
+Zip version => 1.13.1
+Libzip version => 1.0.1
+
+zlib
+
+ZLib Support => enabled
+Stream Wrapper => compress.zlib://
+Stream Filter => zlib.inflate, zlib.deflate
+Compiled Version => 1.2.8
+Linked Version => 1.2.8
+
+Directive => Local Value => Master Value
+zlib.output_compression => Off => Off
+zlib.output_compression_level => -1 => -1
+zlib.output_handler => no value => no value
+
+Additional Modules
+
+Module Name
+sysvsem
+sysvshm
+			</div>
+		</div></div>
+
+
+		<div class="panel">
+		<h2><a href="#tracyBsPnl8" class="tracy-toggle tracy-collapsed">HTTP request</a></h2>
+
+		<div id="tracyBsPnl8" class="tracy-collapsed inner">
+			
+
+						<h3>$_GET</h3>
+						<p><i>empty</i></p>
+									<h3>$_POST</h3>
+						<p><i>empty</i></p>
+									<h3>$_COOKIE</h3>
+						<p><i>empty</i></p>
+								</div></div>
+
+
+		<div class="panel">
+		<h2><a href="#tracyBsPnl9" class="tracy-toggle tracy-collapsed">HTTP response</a></h2>
+
+		<div id="tracyBsPnl9" class="tracy-collapsed inner">
+			<h3>Headers</h3>
+						<p><i>no headers</i></p>
+					</div></div>
+
+
+		
+
+		<ul>
+			<li>Report generated at 2015/09/10 17:04:41</li>
+							<li>CLI: index.php</li>
+						<li>PHP 5.6.13</li><li>Tracy 2.2.8</li><li>Nette Framework 2.2.11 (released on 2015-08-23)</li>		</ul>
+
+		<div id="tracyBluescreenLogo"><a href="http://tracy.nette.org" rel="noreferrer"></a></div>
+	</div>
+</div>
+
+<script>
+(function(){
+	var bs = document.getElementById('tracyBluescreen');
+	document.body.appendChild(bs);
+	document.onkeyup = function(e) {
+		e = e || window.event;
+		if (e.keyCode == 27 && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey) {
+			document.getElementById('tracyBluescreenIcon').click();
+		}
+	};
+
+	for (var i = 0, styles = []; i < document.styleSheets.length; i++) {
+		var style = document.styleSheets[i];
+		if ((style.owningElement || style.ownerNode).className !== 'tracy-debug') {
+			style.oldDisabled = style.disabled;
+			style.disabled = true;
+			styles.push(style);
+		}
+	}
+
+	bs.onclick = function(e) {
+		e = e || window.event;
+		if (e.shiftKey || e.altKey || e.ctrlKey || e.metaKey) {
+			return;
+		}
+
+		for (var link = e.target || e.srcElement; link && (!link.tagName || !link.className.match(/(^|\s)tracy-toggle(\s|$)/)); link = link.parentNode) {}
+		if (!link) {
+			return true;
+		}
+
+		var collapsed = link.className.match(/(^|\s)tracy-collapsed(\s|$)/),
+			ref = link.getAttribute('data-ref') || link.getAttribute('href', 2),
+			dest;
+
+		if (ref && ref !== '#') {
+			dest = document.getElementById(ref.substring(1));
+		} else {
+			for (dest = link.nextSibling; dest && dest.nodeType !== 1; dest = dest.nextSibling) {}
+		}
+
+		link.className = (collapsed ? link.className.replace(/(^|\s)tracy-collapsed(\s|$)/, ' ') : link.className + ' tracy-collapsed').replace(/^\s+|\s+$/g,'');
+		dest.className = (collapsed ? dest.className.replace(/(^|\s)tracy-collapsed(\s|$)/, ' ') : dest.className + ' tracy-collapsed').replace(/^\s+|\s+$/g,'');
+
+		if (link.id === 'tracyBluescreenIcon') {
+			for (i = 0; i < styles.length; i++) {
+				styles[i].disabled = collapsed ? true : styles[i].oldDisabled;
+			}
+		}
+		e.preventDefault ? e.preventDefault() : e.returnValue = false;
+		e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+	};
+})();
+</script>
+</body>
+</html>

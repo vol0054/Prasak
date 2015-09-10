@@ -3,8 +3,9 @@
 namespace App\components;
 use Nette\Application\UI\Control;
 use Nette;
-class BaseControl extends Control{
-    
-    
-    
+use Kdyby\Doctrine\EntityManager;
+
+class BaseControl extends Control
+{
+	
 }

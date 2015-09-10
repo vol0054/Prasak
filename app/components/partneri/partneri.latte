@@ -9,16 +9,16 @@
 
 	<div class="row">
 		<div n:foreach="$hospody as $h" class="col-md-4 col-sm-6 portfolio-item">
-		    <a href="#{$h->modal_name}" class="portfolio-link" data-toggle="modal">
+		    <a href="#{$h->getName()}" class="portfolio-link" data-toggle="modal">
 			    <div class="portfolio-hover">
 				<div class="portfolio-hover-content">
 				    <i class="fa fa-plus fa-3x"></i>
 				</div>
 			    </div>
-			<img src="{*http://placehold.it/400x400*}{$h->thumb}" class="img-responsive img-centered" alt="">
+			<img src="{*http://placehold.it/400x400*}{$h->getImgPath()}" class="img-responsive img-centered" alt="">
 			</a>
 			<div class="portfolio-caption">
-			    <h4>{$h->nazev}</h4>
+			    <h4>{$h->getName()}</h4>
 			    <p class="text-muted"></p>
 			</div>
 		</div>
@@ -27,7 +27,7 @@
 </section>
 
 <!-- Portfolio Modal -->
-    <div n:foreach="$hospody as $modal" class="portfolio-modal modal fade" id="{$modal->modal_name}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div n:foreach="$hospody as $modal" class="portfolio-modal modal fade" id="{$modal->getName()}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -40,11 +40,11 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>{$modal->nazev}</h2>
+                            <h2>{$modal->getName()}</h2>
                             
-                            <img class="img-responsive img-centered" src="{$basePath}/{$modal->img}" alt="">
-                            <p>{$modal->popis}</p>
-			    <p><a href="{$modal->www}">Navštivte webové stránky hodpody {$modal->nazev}</a></p>
+                            <img class="img-responsive img-centered" src="{$basePath}/{$modal->getImgPath()}" alt="">
+                            <p>{$modal->getDescription()}</p>
+			    <p><a href="{$modal->getWww()}">Navštivte webové stránky hodpody {$modal->getName()}</a></p>
                             <ul class="list-inline">
                                 <li></li>
                             </ul>

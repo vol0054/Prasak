@@ -1,0 +1,25 @@
+{* Latte template *}
+
+{block content}
+
+<table class="table">
+	<thead>
+		<tr>
+			<td>#</td>
+			<td>nazev</td>
+			<td>Popis</td>
+			<td>adresa</td>
+			<td>www</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr n:foreach="$hospody as $hospoda">
+			<td>{$hospoda->id}</td>
+			<td>{$hospoda->nazev}</td>
+			<td>{$hospoda->popis}</td>
+			<td>{$hospoda->adresa}</td>
+			<td>{$hospoda->www}</td>
+		</tr>
+			
+	</tbody>
+</table>
